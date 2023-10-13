@@ -6,6 +6,6 @@ class User(Base):
     __tablename__ = "Users"
 
     id = Column(Integer, primary_key=True, index=True)
-    email = Column(String, unique=True, index=True)
-    hashed_password = Column(String)
+    email = Column(String(256), unique=True, index=True)
+    password = Column(String(256))
     is_active = Column(Boolean, default=True)

@@ -11,7 +11,7 @@ def write_user(db: Session, user: UserCreate):
     fake_hashed_password = user.password + "___notreallyhashed"
     db_user = User(
         email=user.email,
-        hashed_password=fake_hashed_password
+        password=fake_hashed_password
     )
     db.add(db_user)
     db.commit()

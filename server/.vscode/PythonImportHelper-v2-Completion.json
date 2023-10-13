@@ -281,7 +281,7 @@
         "kind": 2,
         "importPath": "app.controllers.userController",
         "description": "app.controllers.userController",
-        "peekOfCode": "def get_users(db: Session, skip: int = 0, limit: int = 100):\n    return db.query(User).offset(skip).limit(limit).all()\ndef write_user(db: Session, user: UserCreate):\n    fake_hashed_password = user.password + \"___notreallyhashed\"\n    db_user = User(\n        email=user.email,\n        hashed_password=fake_hashed_password\n    )\n    db.add(db_user)\n    db.commit()",
+        "peekOfCode": "def get_users(db: Session, skip: int = 0, limit: int = 100):\n    return db.query(User).offset(skip).limit(limit).all()\ndef write_user(db: Session, user: UserCreate):\n    fake_hashed_password = user.password + \"___notreallyhashed\"\n    db_user = User(\n        email=user.email,\n        password=fake_hashed_password\n    )\n    db.add(db_user)\n    db.commit()",
         "detail": "app.controllers.userController",
         "documentation": {}
     },
@@ -290,7 +290,7 @@
         "kind": 2,
         "importPath": "app.controllers.userController",
         "description": "app.controllers.userController",
-        "peekOfCode": "def write_user(db: Session, user: UserCreate):\n    fake_hashed_password = user.password + \"___notreallyhashed\"\n    db_user = User(\n        email=user.email,\n        hashed_password=fake_hashed_password\n    )\n    db.add(db_user)\n    db.commit()\n    db.refresh(db_user)\n    return db_user",
+        "peekOfCode": "def write_user(db: Session, user: UserCreate):\n    fake_hashed_password = user.password + \"___notreallyhashed\"\n    db_user = User(\n        email=user.email,\n        password=fake_hashed_password\n    )\n    db.add(db_user)\n    db.commit()\n    db.refresh(db_user)\n    return db_user",
         "detail": "app.controllers.userController",
         "documentation": {}
     },
@@ -299,7 +299,7 @@
         "kind": 6,
         "importPath": "app.models.userModel",
         "description": "app.models.userModel",
-        "peekOfCode": "class User(Base):\n    __tablename__ = \"Users\"\n    id = Column(Integer, primary_key=True, index=True)\n    email = Column(String, unique=True, index=True)\n    hashed_password = Column(String)\n    is_active = Column(Boolean, default=True)",
+        "peekOfCode": "class User(Base):\n    __tablename__ = \"Users\"\n    id = Column(Integer, primary_key=True, index=True)\n    email = Column(String(256), unique=True, index=True)\n    password = Column(String(256))\n    is_active = Column(Boolean, default=True)",
         "detail": "app.models.userModel",
         "documentation": {}
     },

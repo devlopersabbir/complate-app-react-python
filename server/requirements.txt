@@ -2,6 +2,4 @@ fastapi
 sqlalchemy
 python-dotenv
 pymysql
-psycopg2
 uvicorn
-pydantic_settings

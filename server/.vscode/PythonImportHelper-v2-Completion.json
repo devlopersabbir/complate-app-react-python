@@ -49,15 +49,6 @@
         "documentation": {}
     },
     {
-        "label": "sqlalchemy.orm",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
         "label": "declarative_base",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
@@ -250,56 +241,11 @@
         "documentation": {}
     },
     {
-        "label": "DB_USERNAME",
-        "kind": 5,
-        "importPath": "app.configs.database",
-        "description": "app.configs.database",
-        "peekOfCode": "DB_USERNAME = os.environ.get(\"DB_USERNAME\")\nDB_PASSWORD = os.environ.get(\"DB_PASSWORD\")\nDB_HOST = os.environ.get(\"DB_HOST\")\nDB_PORT = os.environ.get(\"DB_PORT\")\nDB_NAME = os.environ.get(\"DB_NAME\")\nDABABASE_URL = f\"postgresql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}\"\nengine = create_engine(DABABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
-        "detail": "app.configs.database",
-        "documentation": {}
-    },
-    {
-        "label": "DB_PASSWORD",
-        "kind": 5,
-        "importPath": "app.configs.database",
-        "description": "app.configs.database",
-        "peekOfCode": "DB_PASSWORD = os.environ.get(\"DB_PASSWORD\")\nDB_HOST = os.environ.get(\"DB_HOST\")\nDB_PORT = os.environ.get(\"DB_PORT\")\nDB_NAME = os.environ.get(\"DB_NAME\")\nDABABASE_URL = f\"postgresql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}\"\nengine = create_engine(DABABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
-        "detail": "app.configs.database",
-        "documentation": {}
-    },
-    {
-        "label": "DB_HOST",
-        "kind": 5,
-        "importPath": "app.configs.database",
-        "description": "app.configs.database",
-        "peekOfCode": "DB_HOST = os.environ.get(\"DB_HOST\")\nDB_PORT = os.environ.get(\"DB_PORT\")\nDB_NAME = os.environ.get(\"DB_NAME\")\nDABABASE_URL = f\"postgresql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}\"\nengine = create_engine(DABABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
-        "detail": "app.configs.database",
-        "documentation": {}
-    },
-    {
-        "label": "DB_PORT",
-        "kind": 5,
-        "importPath": "app.configs.database",
-        "description": "app.configs.database",
-        "peekOfCode": "DB_PORT = os.environ.get(\"DB_PORT\")\nDB_NAME = os.environ.get(\"DB_NAME\")\nDABABASE_URL = f\"postgresql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}\"\nengine = create_engine(DABABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
-        "detail": "app.configs.database",
-        "documentation": {}
-    },
-    {
-        "label": "DB_NAME",
-        "kind": 5,
-        "importPath": "app.configs.database",
-        "description": "app.configs.database",
-        "peekOfCode": "DB_NAME = os.environ.get(\"DB_NAME\")\nDABABASE_URL = f\"postgresql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}\"\nengine = create_engine(DABABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
-        "detail": "app.configs.database",
-        "documentation": {}
-    },
-    {
         "label": "DABABASE_URL",
         "kind": 5,
         "importPath": "app.configs.database",
         "description": "app.configs.database",
-        "peekOfCode": "DABABASE_URL = f\"postgresql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}\"\nengine = create_engine(DABABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
+        "peekOfCode": "DABABASE_URL = os.environ.get(\"DABABASE_URL\")\nengine = create_engine(DABABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
         "detail": "app.configs.database",
         "documentation": {}
     },

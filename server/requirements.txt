@@ -1,7 +1,7 @@
 fastapi
-pydantic
 sqlalchemy
 python-dotenv
 pymysql
-passlib
-python-jose
+psycopg2
+uvicorn
+pydantic_settings

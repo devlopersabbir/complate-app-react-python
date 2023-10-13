@@ -1,0 +1,223 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.ext.declarative",
+        "description": "sqlalchemy.ext.declarative",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.declarative",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "find_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.userModel",
+        "description": "app.models.userModel",
+        "isExtraImport": true,
+        "detail": "app.models.userModel",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.userModel",
+        "description": "app.models.userModel",
+        "isExtraImport": true,
+        "detail": "app.models.userModel",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "isExtraImport": true,
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "DB_USERNAME",
+        "kind": 5,
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "peekOfCode": "DB_USERNAME = os.environ.get(\"DB_USERNAME\")\nDB_PASSWORD = os.environ.get(\"DB_PASSWORD\")\nDB_HOST = os.environ.get(\"DB_HOST\")\nDB_PORT = os.environ.get(\"DB_PORT\")\nDB_NAME = os.environ.get(\"DB_NAME\")\nDABABASE_URL = f\"mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}\"\nengine = create_engine(DABABASE_URL)\nSessionLocal = sessionmaker(bind=engine, autocommit=False, autoflush=False,)\nBase = declarative_base()",
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "DB_PASSWORD",
+        "kind": 5,
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "peekOfCode": "DB_PASSWORD = os.environ.get(\"DB_PASSWORD\")\nDB_HOST = os.environ.get(\"DB_HOST\")\nDB_PORT = os.environ.get(\"DB_PORT\")\nDB_NAME = os.environ.get(\"DB_NAME\")\nDABABASE_URL = f\"mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}\"\nengine = create_engine(DABABASE_URL)\nSessionLocal = sessionmaker(bind=engine, autocommit=False, autoflush=False,)\nBase = declarative_base()",
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "DB_HOST",
+        "kind": 5,
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "peekOfCode": "DB_HOST = os.environ.get(\"DB_HOST\")\nDB_PORT = os.environ.get(\"DB_PORT\")\nDB_NAME = os.environ.get(\"DB_NAME\")\nDABABASE_URL = f\"mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}\"\nengine = create_engine(DABABASE_URL)\nSessionLocal = sessionmaker(bind=engine, autocommit=False, autoflush=False,)\nBase = declarative_base()",
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "DB_PORT",
+        "kind": 5,
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "peekOfCode": "DB_PORT = os.environ.get(\"DB_PORT\")\nDB_NAME = os.environ.get(\"DB_NAME\")\nDABABASE_URL = f\"mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}\"\nengine = create_engine(DABABASE_URL)\nSessionLocal = sessionmaker(bind=engine, autocommit=False, autoflush=False,)\nBase = declarative_base()",
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "DB_NAME",
+        "kind": 5,
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "peekOfCode": "DB_NAME = os.environ.get(\"DB_NAME\")\nDABABASE_URL = f\"mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}\"\nengine = create_engine(DABABASE_URL)\nSessionLocal = sessionmaker(bind=engine, autocommit=False, autoflush=False,)\nBase = declarative_base()",
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "DABABASE_URL",
+        "kind": 5,
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "peekOfCode": "DABABASE_URL = f\"mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}\"\nengine = create_engine(DABABASE_URL)\nSessionLocal = sessionmaker(bind=engine, autocommit=False, autoflush=False,)\nBase = declarative_base()",
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "peekOfCode": "engine = create_engine(DABABASE_URL)\nSessionLocal = sessionmaker(bind=engine, autocommit=False, autoflush=False,)\nBase = declarative_base()",
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "kind": 5,
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "peekOfCode": "SessionLocal = sessionmaker(bind=engine, autocommit=False, autoflush=False,)\nBase = declarative_base()",
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "peekOfCode": "Base = declarative_base()",
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "app.models.userModel",
+        "description": "app.models.userModel",
+        "peekOfCode": "class User(Base):\n    __tablename__: \"User\"\n    id: Column(Integer, primary_key=True, index=True)\n    username: Column(String(16), unique=True, index=True)\n    password: Column(String)",
+        "detail": "app.models.userModel",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.routes.userRoutes",
+        "description": "app.routes.userRoutes",
+        "peekOfCode": "router = APIRouter()\n# @router.post(\"/users\", response_model=User)\n# async def createUser(user: UserCreate, db: Session = Depend())",
+        "detail": "app.routes.userRoutes",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = FastAPI()\n@app.get(\"/\")\nasync def root():\n    return {\"message\": \"Hello World\"}",
+        "detail": "main",
+        "documentation": {}
+    }
+]

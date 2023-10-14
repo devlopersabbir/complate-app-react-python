@@ -129,15 +129,7 @@
         "documentation": {}
     },
     {
-        "label": "SessionLocal",
-        "importPath": "app.configs.database",
-        "description": "app.configs.database",
-        "isExtraImport": true,
-        "detail": "app.configs.database",
-        "documentation": {}
-    },
-    {
-        "label": "engine",
+        "label": "get_db",
         "importPath": "app.configs.database",
         "description": "app.configs.database",
         "isExtraImport": true,
@@ -154,22 +146,6 @@
     },
     {
         "label": "APIRouter",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "FastAPI",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "Depends",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -185,11 +161,27 @@
         "documentation": {}
     },
     {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
         "isExtraImport": true,
-        "detail": "pydantic",
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
         "documentation": {}
     },
     {
@@ -201,35 +193,19 @@
         "documentation": {}
     },
     {
-        "label": "userRoutes",
-        "importPath": "app.routes",
-        "description": "app.routes",
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
         "isExtraImport": true,
-        "detail": "app.routes",
+        "detail": "fastapi.responses",
         "documentation": {}
     },
     {
-        "label": "authRoutes",
-        "importPath": "app.routes",
-        "description": "app.routes",
+        "label": "get_users",
+        "importPath": "app.controllers.userController",
+        "description": "app.controllers.userController",
         "isExtraImport": true,
-        "detail": "app.routes",
-        "documentation": {}
-    },
-    {
-        "label": "userModel",
-        "importPath": "app.models",
-        "description": "app.models",
-        "isExtraImport": true,
-        "detail": "app.models",
-        "documentation": {}
-    },
-    {
-        "label": "userController",
-        "importPath": "app.controllers",
-        "description": "app.controllers",
-        "isExtraImport": true,
-        "detail": "app.controllers",
+        "detail": "app.controllers.userController",
         "documentation": {}
     },
     {
@@ -241,11 +217,35 @@
         "documentation": {}
     },
     {
-        "label": "DABABASE_URL",
-        "kind": 5,
+        "label": "write_user",
+        "importPath": "app.controllers.userController",
+        "description": "app.controllers.userController",
+        "isExtraImport": true,
+        "detail": "app.controllers.userController",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "userRoutes",
+        "importPath": "app.routes",
+        "description": "app.routes",
+        "isExtraImport": true,
+        "detail": "app.routes",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "kind": 2,
         "importPath": "app.configs.database",
         "description": "app.configs.database",
-        "peekOfCode": "DABABASE_URL = os.environ.get(\"DABABASE_URL\")\nengine = create_engine(DABABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
+        "peekOfCode": "def get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
         "detail": "app.configs.database",
         "documentation": {}
     },
@@ -254,7 +254,7 @@
         "kind": 5,
         "importPath": "app.configs.database",
         "description": "app.configs.database",
-        "peekOfCode": "engine = create_engine(DABABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
+        "peekOfCode": "engine = create_engine(DABABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
         "detail": "app.configs.database",
         "documentation": {}
     },
@@ -263,7 +263,7 @@
         "kind": 5,
         "importPath": "app.configs.database",
         "description": "app.configs.database",
-        "peekOfCode": "SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
+        "peekOfCode": "SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
         "detail": "app.configs.database",
         "documentation": {}
     },
@@ -272,7 +272,7 @@
         "kind": 5,
         "importPath": "app.configs.database",
         "description": "app.configs.database",
-        "peekOfCode": "Base = declarative_base()",
+        "peekOfCode": "Base = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
         "detail": "app.configs.database",
         "documentation": {}
     },
@@ -317,7 +317,7 @@
         "kind": 5,
         "importPath": "app.routes.userRoutes",
         "description": "app.routes.userRoutes",
-        "peekOfCode": "router = APIRouter()\n@router.get(\"/\")\nasync def root():\n    return {\n        \"name\": \"Sabbir\"\n    }",
+        "peekOfCode": "router = APIRouter()\n@router.get(\"/\", tags=[\"Get User\"])\nasync def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):\n    users = get_users(db, skip=skip, limit=limit)\n    if not users:\n        return JSONResponse(\n            content={\n                \"message\": \"No user found!\",\n            },\n            status_code=status.HTTP_404_NOT_FOUND",
         "detail": "app.routes.userRoutes",
         "documentation": {}
     },
@@ -349,29 +349,11 @@
         "documentation": {}
     },
     {
-        "label": "get_db",
-        "kind": 2,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "def get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()\n@app.get(\"/\")\ndef read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):\n    users = userController.get_users(db, skip=skip, limit=limit)\n    if not users:",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "read_users",
-        "kind": 2,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):\n    users = userController.get_users(db, skip=skip, limit=limit)\n    if not users:\n        return JSONResponse(\n            content={\n                \"message\": \"No user found!\",\n            },\n            status_code=status.HTTP_404_NOT_FOUND\n        )\n    else:",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
         "label": "app",
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "app = FastAPI()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()\n@app.get(\"/\")\ndef read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):\n    users = userController.get_users(db, skip=skip, limit=limit)",
+        "peekOfCode": "app = FastAPI()\napp.include_router(userRoutes.router, prefix=\"/api/v1/users\")\n@app.get(\"/\", tags=[\"Checker\"])\nasync def checker():\n    return JSONResponse(\n        content={\n            \"Working\": True,\n            \"Hello\": \"World\"\n        }\n    )",
         "detail": "main",
         "documentation": {}
     }

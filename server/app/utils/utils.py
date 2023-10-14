@@ -1,7 +1,7 @@
-from sqlalchemy import Enum
+from enum import Enum as PyEnum
 
 
-class ERoles(Enum):
+class ERoles(PyEnum):
     USER = "USER"
     ADMIN = "ADMIN"
     VENDOR = "VENDOR"

@@ -41,7 +41,7 @@
         "documentation": {}
     },
     {
-        "label": "Boolean",
+        "label": "DateTime",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -49,12 +49,11 @@
         "documentation": {}
     },
     {
-        "label": "sqlalchemy.orm",
-        "kind": 6,
+        "label": "Enum",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
         "isExtraImport": true,
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "detail": "sqlalchemy.orm",
+        "detail": "sqlalchemy",
         "documentation": {}
     },
     {
@@ -90,19 +89,11 @@
         "documentation": {}
     },
     {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
+        "label": "loadDotenv",
+        "importPath": "app.utils.loadDotenv",
+        "description": "app.utils.loadDotenv",
         "isExtraImport": true,
-        "detail": "dotenv",
-        "documentation": {}
-    },
-    {
-        "label": "find_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
+        "detail": "app.utils.loadDotenv",
         "documentation": {}
     },
     {
@@ -130,6 +121,39 @@
         "documentation": {}
     },
     {
+        "label": "hash_password",
+        "importPath": "app.services.services",
+        "description": "app.services.services",
+        "isExtraImport": true,
+        "detail": "app.services.services",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "importPath": "app.services.services",
+        "description": "app.services.services",
+        "isExtraImport": true,
+        "detail": "app.services.services",
+        "documentation": {}
+    },
+    {
+        "label": "verify_password",
+        "importPath": "app.services.services",
+        "description": "app.services.services",
+        "isExtraImport": true,
+        "detail": "app.services.services",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "importPath": "app.configs.database",
         "description": "app.configs.database",
@@ -138,7 +162,7 @@
         "documentation": {}
     },
     {
-        "label": "SessionLocal",
+        "label": "get_db",
         "importPath": "app.configs.database",
         "description": "app.configs.database",
         "isExtraImport": true,
@@ -146,11 +170,36 @@
         "documentation": {}
     },
     {
-        "label": "engine",
-        "importPath": "app.configs.database",
-        "description": "app.configs.database",
+        "label": "func",
+        "importPath": "sqlalchemy.sql",
+        "description": "sqlalchemy.sql",
         "isExtraImport": true,
-        "detail": "app.configs.database",
+        "detail": "sqlalchemy.sql",
+        "documentation": {}
+    },
+    {
+        "label": "ERoles",
+        "importPath": "app.utils.utils",
+        "description": "app.utils.utils",
+        "isExtraImport": true,
+        "detail": "app.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "ERoles",
+        "importPath": "app.utils.utils",
+        "description": "app.utils.utils",
+        "isExtraImport": true,
+        "detail": "app.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -163,22 +212,6 @@
     },
     {
         "label": "APIRouter",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "FastAPI",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "Depends",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -194,11 +227,27 @@
         "documentation": {}
     },
     {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
         "isExtraImport": true,
-        "detail": "pydantic",
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
         "documentation": {}
     },
     {
@@ -210,35 +259,19 @@
         "documentation": {}
     },
     {
-        "label": "userRoutes",
-        "importPath": "app.routes",
-        "description": "app.routes",
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
         "isExtraImport": true,
-        "detail": "app.routes",
+        "detail": "fastapi.responses",
         "documentation": {}
     },
     {
-        "label": "authRoutes",
-        "importPath": "app.routes",
-        "description": "app.routes",
+        "label": "get_users",
+        "importPath": "app.controllers.userController",
+        "description": "app.controllers.userController",
         "isExtraImport": true,
-        "detail": "app.routes",
-        "documentation": {}
-    },
-    {
-        "label": "userModel",
-        "importPath": "app.models",
-        "description": "app.models",
-        "isExtraImport": true,
-        "detail": "app.models",
-        "documentation": {}
-    },
-    {
-        "label": "userController",
-        "importPath": "app.controllers",
-        "description": "app.controllers",
-        "isExtraImport": true,
-        "detail": "app.controllers",
+        "detail": "app.controllers.userController",
         "documentation": {}
     },
     {
@@ -250,56 +283,51 @@
         "documentation": {}
     },
     {
-        "label": "DB_USERNAME",
-        "kind": 5,
-        "importPath": "server.app.configs.database",
-        "description": "server.app.configs.database",
-        "peekOfCode": "DB_USERNAME = os.environ.get(\"DB_USERNAME\")\nDB_PASSWORD = os.environ.get(\"DB_PASSWORD\")\nDB_HOST = os.environ.get(\"DB_HOST\")\nDB_PORT = os.environ.get(\"DB_PORT\")\nDB_NAME = os.environ.get(\"DB_NAME\")\nDABABASE_URL = f\"postgresql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}\"\nengine = create_engine(DABABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
-        "detail": "server.app.configs.database",
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
         "documentation": {}
     },
     {
-        "label": "DB_PASSWORD",
-        "kind": 5,
-        "importPath": "server.app.configs.database",
-        "description": "server.app.configs.database",
-        "peekOfCode": "DB_PASSWORD = os.environ.get(\"DB_PASSWORD\")\nDB_HOST = os.environ.get(\"DB_HOST\")\nDB_PORT = os.environ.get(\"DB_PORT\")\nDB_NAME = os.environ.get(\"DB_NAME\")\nDABABASE_URL = f\"postgresql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}\"\nengine = create_engine(DABABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
-        "detail": "server.app.configs.database",
+        "label": "CryptContext",
+        "importPath": "passlib.context",
+        "description": "passlib.context",
+        "isExtraImport": true,
+        "detail": "passlib.context",
         "documentation": {}
     },
     {
-        "label": "DB_HOST",
-        "kind": 5,
-        "importPath": "server.app.configs.database",
-        "description": "server.app.configs.database",
-        "peekOfCode": "DB_HOST = os.environ.get(\"DB_HOST\")\nDB_PORT = os.environ.get(\"DB_PORT\")\nDB_NAME = os.environ.get(\"DB_NAME\")\nDABABASE_URL = f\"postgresql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}\"\nengine = create_engine(DABABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
-        "detail": "server.app.configs.database",
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
         "documentation": {}
     },
     {
-        "label": "DB_PORT",
-        "kind": 5,
-        "importPath": "server.app.configs.database",
-        "description": "server.app.configs.database",
-        "peekOfCode": "DB_PORT = os.environ.get(\"DB_PORT\")\nDB_NAME = os.environ.get(\"DB_NAME\")\nDABABASE_URL = f\"postgresql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}\"\nengine = create_engine(DABABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
-        "detail": "server.app.configs.database",
+        "label": "find_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
         "documentation": {}
     },
     {
-        "label": "DB_NAME",
-        "kind": 5,
-        "importPath": "server.app.configs.database",
-        "description": "server.app.configs.database",
-        "peekOfCode": "DB_NAME = os.environ.get(\"DB_NAME\")\nDABABASE_URL = f\"postgresql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}\"\nengine = create_engine(DABABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
-        "detail": "server.app.configs.database",
+        "label": "userRoutes",
+        "importPath": "app.routes",
+        "description": "app.routes",
+        "isExtraImport": true,
+        "detail": "app.routes",
         "documentation": {}
     },
     {
-        "label": "DABABASE_URL",
-        "kind": 5,
+        "label": "get_db",
+        "kind": 2,
         "importPath": "server.app.configs.database",
         "description": "server.app.configs.database",
-        "peekOfCode": "DABABASE_URL = f\"postgresql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}\"\nengine = create_engine(DABABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
+        "peekOfCode": "def get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
         "detail": "server.app.configs.database",
         "documentation": {}
     },
@@ -308,7 +336,7 @@
         "kind": 5,
         "importPath": "server.app.configs.database",
         "description": "server.app.configs.database",
-        "peekOfCode": "engine = create_engine(DABABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
+        "peekOfCode": "engine = create_engine(DABABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
         "detail": "server.app.configs.database",
         "documentation": {}
     },
@@ -317,7 +345,7 @@
         "kind": 5,
         "importPath": "server.app.configs.database",
         "description": "server.app.configs.database",
-        "peekOfCode": "SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
+        "peekOfCode": "SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
         "detail": "server.app.configs.database",
         "documentation": {}
     },
@@ -326,7 +354,7 @@
         "kind": 5,
         "importPath": "server.app.configs.database",
         "description": "server.app.configs.database",
-        "peekOfCode": "Base = declarative_base()",
+        "peekOfCode": "Base = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
         "detail": "server.app.configs.database",
         "documentation": {}
     },
@@ -335,7 +363,7 @@
         "kind": 2,
         "importPath": "server.app.controllers.userController",
         "description": "server.app.controllers.userController",
-        "peekOfCode": "def get_users(db: Session, skip: int = 0, limit: int = 100):\n    return db.query(User).offset(skip).limit(limit).all()\ndef write_user(db: Session, user: UserCreate):\n    fake_hashed_password = user.password + \"___notreallyhashed\"\n    db_user = User(\n        email=user.email,\n        hashed_password=fake_hashed_password\n    )\n    db.add(db_user)\n    db.commit()",
+        "peekOfCode": "def get_users(db: Session, skip: int = 0, limit: int = 100):\n    return db.query(User).offset(skip).limit(limit).all()\ndef write_user(db: Session, user: UserCreate):\n    db_user = User(\n        names=user.names,\n        username=user.username,\n        email=user.email,\n        password=hash_password(user.password),\n        role=user.role\n    )",
         "detail": "server.app.controllers.userController",
         "documentation": {}
     },
@@ -344,7 +372,7 @@
         "kind": 2,
         "importPath": "server.app.controllers.userController",
         "description": "server.app.controllers.userController",
-        "peekOfCode": "def write_user(db: Session, user: UserCreate):\n    fake_hashed_password = user.password + \"___notreallyhashed\"\n    db_user = User(\n        email=user.email,\n        hashed_password=fake_hashed_password\n    )\n    db.add(db_user)\n    db.commit()\n    db.refresh(db_user)\n    return db_user",
+        "peekOfCode": "def write_user(db: Session, user: UserCreate):\n    db_user = User(\n        names=user.names,\n        username=user.username,\n        email=user.email,\n        password=hash_password(user.password),\n        role=user.role\n    )\n    db.add(db_user)\n    db.commit()",
         "detail": "server.app.controllers.userController",
         "documentation": {}
     },
@@ -353,7 +381,7 @@
         "kind": 6,
         "importPath": "server.app.models.userModel",
         "description": "server.app.models.userModel",
-        "peekOfCode": "class User(Base):\n    __tablename__ = \"Users\"\n    id = Column(Integer, primary_key=True, index=True)\n    email = Column(String, unique=True, index=True)\n    hashed_password = Column(String)\n    is_active = Column(Boolean, default=True)",
+        "peekOfCode": "class User(Base):\n    __tablename__ = \"Users\"\n    id = Column(Integer, primary_key=True, index=True)\n    uuid = Column(String(36), unique=True, index=True,\n                  default=str(uuid.uuid4()))\n    names = Column(String(256))\n    username: Column(String(256), unique=True)\n    email = Column(String(256), unique=True)\n    password = Column(String(256))\n    role = Column(ERoles, default=ERoles.USER)",
         "detail": "server.app.models.userModel",
         "documentation": {}
     },
@@ -371,17 +399,8 @@
         "kind": 5,
         "importPath": "server.app.routes.userRoutes",
         "description": "server.app.routes.userRoutes",
-        "peekOfCode": "router = APIRouter()\n@router.get(\"/\")\nasync def root():\n    return {\n        \"name\": \"Sabbir\"\n    }",
+        "peekOfCode": "router = APIRouter()\n@router.get(\"/\", tags=[\"Get User\"])\nasync def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):\n    users = get_users(db, skip=skip, limit=limit)\n    if not users:\n        return JSONResponse(\n            content={\n                \"message\": \"No user found!\",\n            },\n            status_code=status.HTTP_404_NOT_FOUND",
         "detail": "server.app.routes.userRoutes",
-        "documentation": {}
-    },
-    {
-        "label": "UserBase",
-        "kind": 6,
-        "importPath": "server.app.schemas.userSchema",
-        "description": "server.app.schemas.userSchema",
-        "peekOfCode": "class UserBase(BaseModel):\n    email: str\nclass UserCreate(UserBase):\n    password: str\nclass UserSchema():\n    id: int\n    is_active: bool",
-        "detail": "server.app.schemas.userSchema",
         "documentation": {}
     },
     {
@@ -389,35 +408,53 @@
         "kind": 6,
         "importPath": "server.app.schemas.userSchema",
         "description": "server.app.schemas.userSchema",
-        "peekOfCode": "class UserCreate(UserBase):\n    password: str\nclass UserSchema():\n    id: int\n    is_active: bool",
+        "peekOfCode": "class UserCreate(BaseModel):\n    name: str\n    username: str\n    email: str\n    password: str\n    role: str = ERoles",
         "detail": "server.app.schemas.userSchema",
         "documentation": {}
     },
     {
-        "label": "UserSchema",
+        "label": "hash_password",
+        "kind": 2,
+        "importPath": "server.app.services.services",
+        "description": "server.app.services.services",
+        "peekOfCode": "def hash_password(password: str) -> str:\n    return password_context.hash(password)\ndef verify_password(plainPassword: str, hashedPassword: str) -> bool:\n    return password_context.verify(plainPassword, hashedPassword)",
+        "detail": "server.app.services.services",
+        "documentation": {}
+    },
+    {
+        "label": "verify_password",
+        "kind": 2,
+        "importPath": "server.app.services.services",
+        "description": "server.app.services.services",
+        "peekOfCode": "def verify_password(plainPassword: str, hashedPassword: str) -> bool:\n    return password_context.verify(plainPassword, hashedPassword)",
+        "detail": "server.app.services.services",
+        "documentation": {}
+    },
+    {
+        "label": "password_context",
+        "kind": 5,
+        "importPath": "server.app.services.services",
+        "description": "server.app.services.services",
+        "peekOfCode": "password_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef hash_password(password: str) -> str:\n    return password_context.hash(password)\ndef verify_password(plainPassword: str, hashedPassword: str) -> bool:\n    return password_context.verify(plainPassword, hashedPassword)",
+        "detail": "server.app.services.services",
+        "documentation": {}
+    },
+    {
+        "label": "loadDotenv",
+        "kind": 2,
+        "importPath": "server.app.utils.loadDotenv",
+        "description": "server.app.utils.loadDotenv",
+        "peekOfCode": "def loadDotenv():\n    load_dotenv(find_dotenv())",
+        "detail": "server.app.utils.loadDotenv",
+        "documentation": {}
+    },
+    {
+        "label": "ERoles",
         "kind": 6,
-        "importPath": "server.app.schemas.userSchema",
-        "description": "server.app.schemas.userSchema",
-        "peekOfCode": "class UserSchema():\n    id: int\n    is_active: bool",
-        "detail": "server.app.schemas.userSchema",
-        "documentation": {}
-    },
-    {
-        "label": "get_db",
-        "kind": 2,
-        "importPath": "server.main",
-        "description": "server.main",
-        "peekOfCode": "def get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()\n@app.get(\"/\")\ndef read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):\n    users = userController.get_users(db, skip=skip, limit=limit)\n    if not users:",
-        "detail": "server.main",
-        "documentation": {}
-    },
-    {
-        "label": "read_users",
-        "kind": 2,
-        "importPath": "server.main",
-        "description": "server.main",
-        "peekOfCode": "def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):\n    users = userController.get_users(db, skip=skip, limit=limit)\n    if not users:\n        return JSONResponse(\n            content={\n                \"message\": \"No user found!\",\n            },\n            status_code=status.HTTP_404_NOT_FOUND\n        )\n    else:",
-        "detail": "server.main",
+        "importPath": "server.app.utils.utils",
+        "description": "server.app.utils.utils",
+        "peekOfCode": "class ERoles(Enum):\n    USER = \"USER\"\n    ADMIN = \"ADMIN\"\n    VENDOR = \"VENDOR\"",
+        "detail": "server.app.utils.utils",
         "documentation": {}
     },
     {
@@ -425,7 +462,7 @@
         "kind": 5,
         "importPath": "server.main",
         "description": "server.main",
-        "peekOfCode": "app = FastAPI()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()\n@app.get(\"/\")\ndef read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):\n    users = userController.get_users(db, skip=skip, limit=limit)",
+        "peekOfCode": "app = FastAPI()\napp.include_router(userRoutes.router, prefix=\"/api/v1/users\")\n@app.get(\"/\", tags=[\"Checker\"])\nasync def checker():\n    return JSONResponse(\n        content={\n            \"Working\": True,\n            \"Hello\": \"World\"\n        }\n    )",
         "detail": "server.main",
         "documentation": {}
     }

@@ -41,6 +41,14 @@
         "documentation": {}
     },
     {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "Enum",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -89,100 +97,35 @@
         "documentation": {}
     },
     {
-        "label": "User",
-        "importPath": "app.models.userModel",
-        "description": "app.models.userModel",
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
         "isExtraImport": true,
-        "detail": "app.models.userModel",
+        "detail": "fastapi.responses",
         "documentation": {}
     },
     {
-        "label": "UserCreate",
-        "importPath": "app.schemas.userSchema",
-        "description": "app.schemas.userSchema",
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
         "isExtraImport": true,
-        "detail": "app.schemas.userSchema",
+        "detail": "fastapi.responses",
         "documentation": {}
     },
     {
-        "label": "UserCreate",
-        "importPath": "app.schemas.userSchema",
-        "description": "app.schemas.userSchema",
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
         "isExtraImport": true,
-        "detail": "app.schemas.userSchema",
+        "detail": "fastapi.responses",
         "documentation": {}
     },
     {
-        "label": "hash_password",
-        "importPath": "app.services.services",
-        "description": "app.services.services",
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
         "isExtraImport": true,
-        "detail": "app.services.services",
-        "documentation": {}
-    },
-    {
-        "label": "hash_password",
-        "importPath": "app.services.services",
-        "description": "app.services.services",
-        "isExtraImport": true,
-        "detail": "app.services.services",
-        "documentation": {}
-    },
-    {
-        "label": "verify_password",
-        "importPath": "app.services.services",
-        "description": "app.services.services",
-        "isExtraImport": true,
-        "detail": "app.services.services",
-        "documentation": {}
-    },
-    {
-        "label": "uuid",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "uuid",
-        "description": "uuid",
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "Base",
-        "importPath": "app.configs.database",
-        "description": "app.configs.database",
-        "isExtraImport": true,
-        "detail": "app.configs.database",
-        "documentation": {}
-    },
-    {
-        "label": "get_db",
-        "importPath": "app.configs.database",
-        "description": "app.configs.database",
-        "isExtraImport": true,
-        "detail": "app.configs.database",
-        "documentation": {}
-    },
-    {
-        "label": "Annotated",
-        "importPath": "sqlalchemy.sql.annotation",
-        "description": "sqlalchemy.sql.annotation",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.sql.annotation",
-        "documentation": {}
-    },
-    {
-        "label": "ERoles",
-        "importPath": "app.utils.utils",
-        "description": "app.utils.utils",
-        "isExtraImport": true,
-        "detail": "app.utils.utils",
-        "documentation": {}
-    },
-    {
-        "label": "ERoles",
-        "importPath": "app.utils.utils",
-        "description": "app.utils.utils",
-        "isExtraImport": true,
-        "detail": "app.utils.utils",
+        "detail": "fastapi",
         "documentation": {}
     },
     {
@@ -234,19 +177,109 @@
         "documentation": {}
     },
     {
-        "label": "JSONResponse",
-        "importPath": "fastapi.responses",
-        "description": "fastapi.responses",
+        "label": "User",
+        "importPath": "app.models.userModel",
+        "description": "app.models.userModel",
         "isExtraImport": true,
-        "detail": "fastapi.responses",
+        "detail": "app.models.userModel",
         "documentation": {}
     },
     {
-        "label": "JSONResponse",
-        "importPath": "fastapi.responses",
-        "description": "fastapi.responses",
+        "label": "User",
+        "importPath": "app.models.userModel",
+        "description": "app.models.userModel",
         "isExtraImport": true,
-        "detail": "fastapi.responses",
+        "detail": "app.models.userModel",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreate",
+        "importPath": "app.schemas.userSchema",
+        "description": "app.schemas.userSchema",
+        "isExtraImport": true,
+        "detail": "app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreate",
+        "importPath": "app.schemas.userSchema",
+        "description": "app.schemas.userSchema",
+        "isExtraImport": true,
+        "detail": "app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "importPath": "app.services.services",
+        "description": "app.services.services",
+        "isExtraImport": true,
+        "detail": "app.services.services",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "isExtraImport": true,
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "isExtraImport": true,
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "isExtraImport": true,
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "isExtraImport": true,
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "ERoles",
+        "importPath": "app.utils.utils",
+        "description": "app.utils.utils",
+        "isExtraImport": true,
+        "detail": "app.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "ERoles",
+        "importPath": "app.utils.utils",
+        "description": "app.utils.utils",
+        "isExtraImport": true,
+        "detail": "app.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -298,6 +331,14 @@
         "documentation": {}
     },
     {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
         "label": "userRoutes",
         "importPath": "app.routes",
         "description": "app.routes",
@@ -346,7 +387,7 @@
         "kind": 2,
         "importPath": "app.controllers.userController",
         "description": "app.controllers.userController",
-        "peekOfCode": "def get_users(db: Session, skip: int = 0, limit: int = 100):\n    return db.query(User).offset(skip).limit(limit).all()\ndef write_user(db: Session, user: UserCreate):\n    db_user = User(\n        name=user.name,\n        username=user.username,\n        email=user.email,\n        password=hash_password(user.password),\n        role=user.role\n    )",
+        "peekOfCode": "def get_users(db: Session, skip: int = 0, limit: int = 100):\n    return db.query(User).offset(skip).limit(limit).all()\ndef write_user(db: Session, user: UserCreate) -> User:\n    db_user = User(\n        name=user.name,\n        username=user.username,\n        email=user.email,\n        password=hash_password(user.password),\n        role=user.role\n    )",
         "detail": "app.controllers.userController",
         "documentation": {}
     },
@@ -355,7 +396,7 @@
         "kind": 2,
         "importPath": "app.controllers.userController",
         "description": "app.controllers.userController",
-        "peekOfCode": "def write_user(db: Session, user: UserCreate):\n    db_user = User(\n        name=user.name,\n        username=user.username,\n        email=user.email,\n        password=hash_password(user.password),\n        role=user.role\n    )\n    db.add(db_user)\n    db.commit()",
+        "peekOfCode": "def write_user(db: Session, user: UserCreate) -> User:\n    db_user = User(\n        name=user.name,\n        username=user.username,\n        email=user.email,\n        password=hash_password(user.password),\n        role=user.role\n    )\n    db.add(db_user)\n    db.commit()",
         "detail": "app.controllers.userController",
         "documentation": {}
     },
@@ -364,7 +405,7 @@
         "kind": 6,
         "importPath": "app.models.userModel",
         "description": "app.models.userModel",
-        "peekOfCode": "class User(Base):\n    __tablename__ = \"Users\"\n    id = Column(Integer, primary_key=True, index=True)\n    uuid = Column(String(36), unique=True, index=True,\n                  default=str(uuid.uuid4()))\n    name = Column(String(256))\n    username: Column(String(256), unique=True, nullable=False, index=True)\n    email = Column(String(256), unique=True, index=True)\n    password = Column(String(256))\n    role = Column(ERoles, default=ERoles.USER)",
+        "peekOfCode": "class User(Base):\n    __tablename__ = \"Users\"\n    id = Column(Integer, primary_key=True, index=True)\n    uuid = Column(String(36), unique=True,\n                  default=str(uuid.uuid4()))\n    name = Column(String(256), nullable=True)\n    username = Column(String(256), unique=True)\n    email = Column(String(256), unique=True)\n    password = Column(String(256))\n    role = Column(Enum(ERoles), default=ERoles.USER)",
         "detail": "app.models.userModel",
         "documentation": {}
     },
@@ -436,7 +477,7 @@
         "kind": 6,
         "importPath": "app.utils.utils",
         "description": "app.utils.utils",
-        "peekOfCode": "class ERoles(Enum):\n    USER = \"USER\"\n    ADMIN = \"ADMIN\"\n    VENDOR = \"VENDOR\"",
+        "peekOfCode": "class ERoles(PyEnum):\n    USER = \"USER\"\n    ADMIN = \"ADMIN\"\n    VENDOR = \"VENDOR\"",
         "detail": "app.utils.utils",
         "documentation": {}
     },

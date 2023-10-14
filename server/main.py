@@ -1,9 +1,9 @@
 from fastapi import FastAPI, status
 from fastapi.responses import JSONResponse
 from app.routes import userRoutes
-from app.services.services import hash_password, verify_password
+from app.configs.database import Base, engine
 
-# userModel.Base.metadata.create_all(bind=engine)
+Base.metadata.create_all(bind=engine)
 app = FastAPI()
 
 

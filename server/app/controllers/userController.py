@@ -1,3 +1,5 @@
+from fastapi.responses import JSONResponse
+from fastapi import status
 from sqlalchemy.orm import Session
 from app.models.userModel import User
 from app.schemas.userSchema import UserCreate
@@ -8,7 +10,7 @@ def get_users(db: Session, skip: int = 0, limit: int = 100):
     return db.query(User).offset(skip).limit(limit).all()
 
 
-def write_user(db: Session, user: UserCreate):
+def write_user(db: Session, user: UserCreate) -> User:
     db_user = User(
         name=user.name,
         username=user.username,

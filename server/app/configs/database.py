@@ -5,7 +5,6 @@ from app.utils.loadDotenv import loadDotenv
 loadDotenv()
 
 DABABASE_URL: str = os.environ.get("DABABASE_URL")
-
 engine = create_engine(DABABASE_URL)
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)

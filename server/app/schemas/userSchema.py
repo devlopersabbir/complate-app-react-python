@@ -1,14 +1,10 @@
 from pydantic import BaseModel
+from app.utils.utils import ERoles
 
 
-class UserBase(BaseModel):
+class UserCreate(BaseModel):
+    name: str
+    username: str
     email: str
-
-
-class UserCreate(UserBase):
     password: str
-
-
-class UserSchema():
-    id: int
-    is_active: bool
+    role: str = ERoles

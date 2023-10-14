@@ -25,7 +25,6 @@ async def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_
 @router.post("/", tags=["Create User"])
 async def create_user(user: UserCreate, db: Session = Depends(get_db)):
     write_user(db, user)
-
     return JSONResponse(
         content={
             "message": "User created successfully!"

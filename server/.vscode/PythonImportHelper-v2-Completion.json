@@ -41,7 +41,7 @@
         "documentation": {}
     },
     {
-        "label": "Boolean",
+        "label": "Enum",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -81,19 +81,11 @@
         "documentation": {}
     },
     {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
+        "label": "loadDotenv",
+        "importPath": "app.utils.loadDotenv",
+        "description": "app.utils.loadDotenv",
         "isExtraImport": true,
-        "detail": "dotenv",
-        "documentation": {}
-    },
-    {
-        "label": "find_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
+        "detail": "app.utils.loadDotenv",
         "documentation": {}
     },
     {
@@ -121,6 +113,39 @@
         "documentation": {}
     },
     {
+        "label": "hash_password",
+        "importPath": "app.services.services",
+        "description": "app.services.services",
+        "isExtraImport": true,
+        "detail": "app.services.services",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "importPath": "app.services.services",
+        "description": "app.services.services",
+        "isExtraImport": true,
+        "detail": "app.services.services",
+        "documentation": {}
+    },
+    {
+        "label": "verify_password",
+        "importPath": "app.services.services",
+        "description": "app.services.services",
+        "isExtraImport": true,
+        "detail": "app.services.services",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "importPath": "app.configs.database",
         "description": "app.configs.database",
@@ -134,6 +159,30 @@
         "description": "app.configs.database",
         "isExtraImport": true,
         "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "sqlalchemy.sql.annotation",
+        "description": "sqlalchemy.sql.annotation",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.sql.annotation",
+        "documentation": {}
+    },
+    {
+        "label": "ERoles",
+        "importPath": "app.utils.utils",
+        "description": "app.utils.utils",
+        "isExtraImport": true,
+        "detail": "app.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "ERoles",
+        "importPath": "app.utils.utils",
+        "description": "app.utils.utils",
+        "isExtraImport": true,
+        "detail": "app.utils.utils",
         "documentation": {}
     },
     {
@@ -217,19 +266,35 @@
         "documentation": {}
     },
     {
-        "label": "write_user",
-        "importPath": "app.controllers.userController",
-        "description": "app.controllers.userController",
-        "isExtraImport": true,
-        "detail": "app.controllers.userController",
-        "documentation": {}
-    },
-    {
         "label": "BaseModel",
         "importPath": "pydantic",
         "description": "pydantic",
         "isExtraImport": true,
         "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "CryptContext",
+        "importPath": "passlib.context",
+        "description": "passlib.context",
+        "isExtraImport": true,
+        "detail": "passlib.context",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "find_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
         "documentation": {}
     },
     {
@@ -281,7 +346,7 @@
         "kind": 2,
         "importPath": "app.controllers.userController",
         "description": "app.controllers.userController",
-        "peekOfCode": "def get_users(db: Session, skip: int = 0, limit: int = 100):\n    return db.query(User).offset(skip).limit(limit).all()\ndef write_user(db: Session, user: UserCreate):\n    fake_hashed_password = user.password + \"___notreallyhashed\"\n    db_user = User(\n        email=user.email,\n        password=fake_hashed_password\n    )\n    db.add(db_user)\n    db.commit()",
+        "peekOfCode": "def get_users(db: Session, skip: int = 0, limit: int = 100):\n    return db.query(User).offset(skip).limit(limit).all()\ndef write_user(db: Session, user: UserCreate):\n    db_user = User(\n        name=user.name,\n        username=user.username,\n        email=user.email,\n        password=hash_password(user.password),\n        role=user.role\n    )",
         "detail": "app.controllers.userController",
         "documentation": {}
     },
@@ -290,7 +355,7 @@
         "kind": 2,
         "importPath": "app.controllers.userController",
         "description": "app.controllers.userController",
-        "peekOfCode": "def write_user(db: Session, user: UserCreate):\n    fake_hashed_password = user.password + \"___notreallyhashed\"\n    db_user = User(\n        email=user.email,\n        password=fake_hashed_password\n    )\n    db.add(db_user)\n    db.commit()\n    db.refresh(db_user)\n    return db_user",
+        "peekOfCode": "def write_user(db: Session, user: UserCreate):\n    db_user = User(\n        name=user.name,\n        username=user.username,\n        email=user.email,\n        password=hash_password(user.password),\n        role=user.role\n    )\n    db.add(db_user)\n    db.commit()",
         "detail": "app.controllers.userController",
         "documentation": {}
     },
@@ -299,7 +364,7 @@
         "kind": 6,
         "importPath": "app.models.userModel",
         "description": "app.models.userModel",
-        "peekOfCode": "class User(Base):\n    __tablename__ = \"Users\"\n    id = Column(Integer, primary_key=True, index=True)\n    email = Column(String(256), unique=True, index=True)\n    password = Column(String(256))\n    is_active = Column(Boolean, default=True)",
+        "peekOfCode": "class User(Base):\n    __tablename__ = \"Users\"\n    id = Column(Integer, primary_key=True, index=True)\n    uuid = Column(String(36), unique=True, index=True,\n                  default=str(uuid.uuid4()))\n    name = Column(String(256))\n    username: Column(String(256), unique=True, nullable=False, index=True)\n    email = Column(String(256), unique=True, index=True)\n    password = Column(String(256))\n    role = Column(ERoles, default=ERoles.USER)",
         "detail": "app.models.userModel",
         "documentation": {}
     },
@@ -322,30 +387,57 @@
         "documentation": {}
     },
     {
-        "label": "UserBase",
-        "kind": 6,
-        "importPath": "app.schemas.userSchema",
-        "description": "app.schemas.userSchema",
-        "peekOfCode": "class UserBase(BaseModel):\n    email: str\nclass UserCreate(UserBase):\n    password: str\nclass UserSchema():\n    id: int\n    is_active: bool",
-        "detail": "app.schemas.userSchema",
-        "documentation": {}
-    },
-    {
         "label": "UserCreate",
         "kind": 6,
         "importPath": "app.schemas.userSchema",
         "description": "app.schemas.userSchema",
-        "peekOfCode": "class UserCreate(UserBase):\n    password: str\nclass UserSchema():\n    id: int\n    is_active: bool",
+        "peekOfCode": "class UserCreate(BaseModel):\n    name: str\n    username: str\n    email: str\n    password: str\n    role: str = ERoles",
         "detail": "app.schemas.userSchema",
         "documentation": {}
     },
     {
-        "label": "UserSchema",
+        "label": "hash_password",
+        "kind": 2,
+        "importPath": "app.services.services",
+        "description": "app.services.services",
+        "peekOfCode": "def hash_password(password: str) -> str:\n    return password_context.hash(password)\ndef verify_password(plainPassword: str, hashedPassword: str) -> bool:\n    return password_context.verify(plainPassword, hashedPassword)",
+        "detail": "app.services.services",
+        "documentation": {}
+    },
+    {
+        "label": "verify_password",
+        "kind": 2,
+        "importPath": "app.services.services",
+        "description": "app.services.services",
+        "peekOfCode": "def verify_password(plainPassword: str, hashedPassword: str) -> bool:\n    return password_context.verify(plainPassword, hashedPassword)",
+        "detail": "app.services.services",
+        "documentation": {}
+    },
+    {
+        "label": "password_context",
+        "kind": 5,
+        "importPath": "app.services.services",
+        "description": "app.services.services",
+        "peekOfCode": "password_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef hash_password(password: str) -> str:\n    return password_context.hash(password)\ndef verify_password(plainPassword: str, hashedPassword: str) -> bool:\n    return password_context.verify(plainPassword, hashedPassword)",
+        "detail": "app.services.services",
+        "documentation": {}
+    },
+    {
+        "label": "loadDotenv",
+        "kind": 2,
+        "importPath": "app.utils.loadDotenv",
+        "description": "app.utils.loadDotenv",
+        "peekOfCode": "def loadDotenv():\n    load_dotenv(find_dotenv())",
+        "detail": "app.utils.loadDotenv",
+        "documentation": {}
+    },
+    {
+        "label": "ERoles",
         "kind": 6,
-        "importPath": "app.schemas.userSchema",
-        "description": "app.schemas.userSchema",
-        "peekOfCode": "class UserSchema():\n    id: int\n    is_active: bool",
-        "detail": "app.schemas.userSchema",
+        "importPath": "app.utils.utils",
+        "description": "app.utils.utils",
+        "peekOfCode": "class ERoles(Enum):\n    USER = \"USER\"\n    ADMIN = \"ADMIN\"\n    VENDOR = \"VENDOR\"",
+        "detail": "app.utils.utils",
         "documentation": {}
     },
     {

@@ -501,7 +501,7 @@
         "kind": 2,
         "importPath": "app.controllers.userController",
         "description": "app.controllers.userController",
-        "peekOfCode": "def update_user(db: Session, user_data: UserUpdateSchema, isUser: User):\n    for key, value in user_data.dict().items():\n        if value:\n            setattr(isUser, key, value)\n    db.commit()\n    db.refresh(isUser)\n    return isUser",
+        "peekOfCode": "def update_user(db: Session, user_data: UserUpdateSchema, isUser: User):\n    for key, value in user_data.dict().items():\n        if key == \"password\" and value is not None:\n            # Hash the provided password and set it to the isUser object\n            hashedPassword = hash_password(value)\n            setattr(isUser, key, hashedPassword)\n        elif value is not None:\n            # For other fields (e.g., username), set the values directly\n            setattr(isUser, key, value)\n    db.commit()",
         "detail": "app.controllers.userController",
         "documentation": {}
     },

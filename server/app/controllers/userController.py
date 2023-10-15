@@ -24,8 +24,14 @@ def write_user(db: Session, user: UserSchema):
 
 def update_user(db: Session, user_data: UserUpdateSchema, isUser: User):
     for key, value in user_data.dict().items():
-        if value:
+        if key == "password" and value is not None:
+            # Hash the provided password and set it to the isUser object
+            hashedPassword = hash_password(value)
+            setattr(isUser, key, hashedPassword)
+        elif value is not None:
+            # For other fields (e.g., username), set the values directly
             setattr(isUser, key, value)
+
     db.commit()
     db.refresh(isUser)
     return isUser

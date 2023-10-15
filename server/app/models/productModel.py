@@ -1,9 +1,11 @@
 from app.models.baseModel import BaseModels
-from sqlalchemy import Column, String, Integer
+from sqlalchemy import Column, String, Float, Text
 
 
 class Product(BaseModels):
-    title: Column(String(256))
-    slug: Column(String(256), unique=True)
-    description: Column(String())
-    price: Column(Integer())
+    __tablename__ = "Products"
+
+    title = Column(String(255), nullable=False)
+    slug = Column(String(255), unique=True, nullable=False)
+    description = Column(Text, nullable=True)
+    price = Column(Float, nullable=False, default=0.0)

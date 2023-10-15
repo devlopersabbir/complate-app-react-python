@@ -65,7 +65,15 @@
         "documentation": {}
     },
     {
-        "label": "Integer",
+        "label": "Float",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -675,7 +683,7 @@
         "kind": 6,
         "importPath": "app.models.productModel",
         "description": "app.models.productModel",
-        "peekOfCode": "class Product(BaseModels):\n    title: Column(String(256))\n    slug: Column(String(256), unique=True)\n    description: Column(String())\n    price: Column(Integer())",
+        "peekOfCode": "class Product(BaseModels):\n    __tablename__ = \"Products\"\n    title = Column(String(255), nullable=False)\n    slug = Column(String(255), unique=True, nullable=False)\n    description = Column(Text, nullable=True)\n    price = Column(Float, nullable=False, default=0.0)",
         "detail": "app.models.productModel",
         "documentation": {}
     },

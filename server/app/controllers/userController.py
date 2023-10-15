@@ -13,7 +13,7 @@ def write_user(db: Session, user: UserSchema):
         name=user.name,
         username=user.username,
         email=user.email,
-        password=hash_password(user.password),
+        password=user.password,
         role=user.role
     )
     db.add(db_user)

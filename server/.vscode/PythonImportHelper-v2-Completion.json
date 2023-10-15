@@ -73,6 +73,14 @@
         "documentation": {}
     },
     {
+        "label": "event",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "declarative_base",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
@@ -182,6 +190,14 @@
         "description": "app.schemas.userSchema",
         "isExtraImport": true,
         "detail": "app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "importPath": "app.services.services",
+        "description": "app.services.services",
+        "isExtraImport": true,
+        "detail": "app.services.services",
         "documentation": {}
     },
     {
@@ -467,7 +483,7 @@
         "kind": 2,
         "importPath": "app.controllers.userController",
         "description": "app.controllers.userController",
-        "peekOfCode": "def get_users(db: Session, skip: int = 0, limit: int = 100):\n    return db.query(User).offset(skip).limit(limit).all()\ndef write_user(db: Session, user: UserSchema):\n    db_user = User(\n        name=user.name,\n        username=user.username,\n        email=user.email,\n        password=hash_password(user.password),\n        role=user.role\n    )",
+        "peekOfCode": "def get_users(db: Session, skip: int = 0, limit: int = 100):\n    return db.query(User).offset(skip).limit(limit).all()\ndef write_user(db: Session, user: UserSchema):\n    db_user = User(\n        name=user.name,\n        username=user.username,\n        email=user.email,\n        password=user.password,\n        role=user.role\n    )",
         "detail": "app.controllers.userController",
         "documentation": {}
     },
@@ -476,7 +492,7 @@
         "kind": 2,
         "importPath": "app.controllers.userController",
         "description": "app.controllers.userController",
-        "peekOfCode": "def write_user(db: Session, user: UserSchema):\n    db_user = User(\n        name=user.name,\n        username=user.username,\n        email=user.email,\n        password=hash_password(user.password),\n        role=user.role\n    )\n    db.add(db_user)\n    db.commit()",
+        "peekOfCode": "def write_user(db: Session, user: UserSchema):\n    db_user = User(\n        name=user.name,\n        username=user.username,\n        email=user.email,\n        password=user.password,\n        role=user.role\n    )\n    db.add(db_user)\n    db.commit()",
         "detail": "app.controllers.userController",
         "documentation": {}
     },
@@ -530,7 +546,16 @@
         "kind": 6,
         "importPath": "app.models.userModel",
         "description": "app.models.userModel",
-        "peekOfCode": "class User(BaseModels):\n    __tablename__ = \"Users\"\n    name = Column(String(256), nullable=True)\n    username = Column(String(256), unique=True)\n    email = Column(String(256), unique=True)\n    password = Column(String(256))\n    role = Column(Enum(ERoles), default=ERoles.USER)",
+        "peekOfCode": "class User(BaseModels):\n    __tablename__ = \"Users\"\n    name = Column(String(256), nullable=True)\n    username = Column(String(256), unique=True)\n    email = Column(String(256), unique=True)\n    password = Column(String(256))\n    role = Column(Enum(ERoles), default=ERoles.USER)\ndef before_hash_password(mapper, connection, target):\n    target.password = hash_password(target.password)\nevent.listen(User, \"before_insert\", before_hash_password)",
+        "detail": "app.models.userModel",
+        "documentation": {}
+    },
+    {
+        "label": "before_hash_password",
+        "kind": 2,
+        "importPath": "app.models.userModel",
+        "description": "app.models.userModel",
+        "peekOfCode": "def before_hash_password(mapper, connection, target):\n    target.password = hash_password(target.password)\nevent.listen(User, \"before_insert\", before_hash_password)",
         "detail": "app.models.userModel",
         "documentation": {}
     },

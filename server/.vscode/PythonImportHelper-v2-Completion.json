@@ -65,6 +65,30 @@
         "documentation": {}
     },
     {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "Enum",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -121,11 +145,43 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
         "label": "loadDotenv",
         "importPath": "app.utils.loadDotenv",
         "description": "app.utils.loadDotenv",
         "isExtraImport": true,
         "detail": "app.utils.loadDotenv",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "app.models.productModel",
+        "description": "app.models.productModel",
+        "isExtraImport": true,
+        "detail": "app.models.productModel",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "app.models.productModel",
+        "description": "app.models.productModel",
+        "isExtraImport": true,
+        "detail": "app.models.productModel",
         "documentation": {}
     },
     {
@@ -234,6 +290,14 @@
         "documentation": {}
     },
     {
+        "label": "get_db",
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "isExtraImport": true,
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "importPath": "app.configs.database",
         "description": "app.configs.database",
@@ -259,19 +323,11 @@
         "documentation": {}
     },
     {
-        "label": "ERoles",
-        "importPath": "app.utils.common",
-        "description": "app.utils.common",
+        "label": "BaseModels",
+        "importPath": "app.models.baseModel",
+        "description": "app.models.baseModel",
         "isExtraImport": true,
-        "detail": "app.utils.common",
-        "documentation": {}
-    },
-    {
-        "label": "ERoles",
-        "importPath": "app.utils.common",
-        "description": "app.utils.common",
-        "isExtraImport": true,
-        "detail": "app.utils.common",
+        "detail": "app.models.baseModel",
         "documentation": {}
     },
     {
@@ -283,7 +339,47 @@
         "documentation": {}
     },
     {
+        "label": "ERoles",
+        "importPath": "app.utils.common",
+        "description": "app.utils.common",
+        "isExtraImport": true,
+        "detail": "app.utils.common",
+        "documentation": {}
+    },
+    {
+        "label": "ERoles",
+        "importPath": "app.utils.common",
+        "description": "app.utils.common",
+        "isExtraImport": true,
+        "detail": "app.utils.common",
+        "documentation": {}
+    },
+    {
         "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -344,6 +440,22 @@
         "description": "fastapi.responses",
         "isExtraImport": true,
         "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "getAllProduct",
+        "importPath": "app.controllers.productController",
+        "description": "app.controllers.productController",
+        "isExtraImport": true,
+        "detail": "app.controllers.productController",
         "documentation": {}
     },
     {
@@ -479,6 +591,15 @@
         "documentation": {}
     },
     {
+        "label": "getAllProduct",
+        "kind": 2,
+        "importPath": "app.controllers.productController",
+        "description": "app.controllers.productController",
+        "peekOfCode": "def getAllProduct(db: Session):\n    db.query(Product).all()",
+        "detail": "app.controllers.productController",
+        "documentation": {}
+    },
+    {
         "label": "get_users",
         "kind": 2,
         "importPath": "app.controllers.userController",
@@ -542,6 +663,15 @@
         "documentation": {}
     },
     {
+        "label": "Product",
+        "kind": 6,
+        "importPath": "app.models.productModel",
+        "description": "app.models.productModel",
+        "peekOfCode": "class Product(BaseModels):\n    title: Column(String(256))\n    slug: Column(String(256), unique=True)\n    description: Column(String())\n    price: Column(Integer())",
+        "detail": "app.models.productModel",
+        "documentation": {}
+    },
+    {
         "label": "User",
         "kind": 6,
         "importPath": "app.models.userModel",
@@ -566,6 +696,15 @@
         "description": "app.routes.authRoutes",
         "peekOfCode": "router = APIRouter()\n@router.get(\"/\")\nasync def login():\n    return {\n        \"login\": True\n    }",
         "detail": "app.routes.authRoutes",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.routes.productRoutes",
+        "description": "app.routes.productRoutes",
+        "peekOfCode": "router = APIRouter()\n@router.get(\"/\", tags=[\"Get Product\"])\nasync def get_all_product(db: Session = Depends(get_db)):\n    products = getAllProduct(db)\n    if not products:\n        return JSONResponse(\n            content={\n                \"message\": \"No Product Avaiable!\",\n            },\n            status_code=status.HTTP_404_NOT_FOUND",
+        "detail": "app.routes.productRoutes",
         "documentation": {}
     },
     {

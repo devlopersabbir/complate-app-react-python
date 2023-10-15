@@ -1,7 +1,7 @@
 import uuid
 from app.configs.database import Base
 from sqlalchemy import Column, String, Integer, DateTime, Enum
-from app.utils.utils import ERoles
+from app.utils.common import ERoles
 import datetime
 
 

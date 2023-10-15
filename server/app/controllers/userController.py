@@ -10,7 +10,7 @@ def get_users(db: Session, skip: int = 0, limit: int = 100):
     return db.query(User).offset(skip).limit(limit).all()
 
 
-def write_user(db: Session, user: UserCreate) -> User:
+def write_user(db: Session, user: UserCreate):
     db_user = User(
         name=user.name,
         username=user.username,

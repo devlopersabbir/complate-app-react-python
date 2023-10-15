@@ -1,5 +1,6 @@
+import datetime
 from pydantic import BaseModel
-from app.utils.utils import ERoles
+from app.utils.common import ERoles
 
 
 class UserCreate(BaseModel):

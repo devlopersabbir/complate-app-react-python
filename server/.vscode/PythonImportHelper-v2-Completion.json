@@ -193,6 +193,22 @@
         "documentation": {}
     },
     {
+        "label": "User",
+        "importPath": "app.models.userModel",
+        "description": "app.models.userModel",
+        "isExtraImport": true,
+        "detail": "app.models.userModel",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreate",
+        "importPath": "app.schemas.userSchema",
+        "description": "app.schemas.userSchema",
+        "isExtraImport": true,
+        "detail": "app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
         "label": "UserCreate",
         "importPath": "app.schemas.userSchema",
         "description": "app.schemas.userSchema",
@@ -259,18 +275,18 @@
     },
     {
         "label": "ERoles",
-        "importPath": "app.utils.utils",
-        "description": "app.utils.utils",
+        "importPath": "app.utils.common",
+        "description": "app.utils.common",
         "isExtraImport": true,
-        "detail": "app.utils.utils",
+        "detail": "app.utils.common",
         "documentation": {}
     },
     {
         "label": "ERoles",
-        "importPath": "app.utils.utils",
-        "description": "app.utils.utils",
+        "importPath": "app.utils.common",
+        "description": "app.utils.common",
         "isExtraImport": true,
-        "detail": "app.utils.utils",
+        "detail": "app.utils.common",
         "documentation": {}
     },
     {
@@ -299,6 +315,14 @@
         "documentation": {}
     },
     {
+        "label": "find_by_username",
+        "importPath": "app.libs.reuses",
+        "description": "app.libs.reuses",
+        "isExtraImport": true,
+        "detail": "app.libs.reuses",
+        "documentation": {}
+    },
+    {
         "label": "BaseModel",
         "importPath": "pydantic",
         "description": "pydantic",
@@ -315,6 +339,14 @@
         "documentation": {}
     },
     {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
         "label": "load_dotenv",
         "importPath": "dotenv",
         "description": "dotenv",
@@ -328,14 +360,6 @@
         "description": "dotenv",
         "isExtraImport": true,
         "detail": "dotenv",
-        "documentation": {}
-    },
-    {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
-        "isExtraImport": true,
-        "detail": "enum",
         "documentation": {}
     },
     {
@@ -387,7 +411,7 @@
         "kind": 2,
         "importPath": "app.controllers.userController",
         "description": "app.controllers.userController",
-        "peekOfCode": "def get_users(db: Session, skip: int = 0, limit: int = 100):\n    return db.query(User).offset(skip).limit(limit).all()\ndef write_user(db: Session, user: UserCreate) -> User:\n    db_user = User(\n        name=user.name,\n        username=user.username,\n        email=user.email,\n        password=hash_password(user.password),\n        role=user.role\n    )",
+        "peekOfCode": "def get_users(db: Session, skip: int = 0, limit: int = 100):\n    return db.query(User).offset(skip).limit(limit).all()\ndef write_user(db: Session, user: UserCreate):\n    db_user = User(\n        name=user.name,\n        username=user.username,\n        email=user.email,\n        password=hash_password(user.password),\n        role=user.role\n    )",
         "detail": "app.controllers.userController",
         "documentation": {}
     },
@@ -396,8 +420,26 @@
         "kind": 2,
         "importPath": "app.controllers.userController",
         "description": "app.controllers.userController",
-        "peekOfCode": "def write_user(db: Session, user: UserCreate) -> User:\n    db_user = User(\n        name=user.name,\n        username=user.username,\n        email=user.email,\n        password=hash_password(user.password),\n        role=user.role\n    )\n    db.add(db_user)\n    db.commit()",
+        "peekOfCode": "def write_user(db: Session, user: UserCreate):\n    db_user = User(\n        name=user.name,\n        username=user.username,\n        email=user.email,\n        password=hash_password(user.password),\n        role=user.role\n    )\n    db.add(db_user)\n    db.commit()",
         "detail": "app.controllers.userController",
+        "documentation": {}
+    },
+    {
+        "label": "find_by_username",
+        "kind": 2,
+        "importPath": "app.libs.reuses",
+        "description": "app.libs.reuses",
+        "peekOfCode": "def find_by_username(query_db, query_model: User, query_with: UserCreate) -> bool:\n    return query_db.query(query_model).filter(\n        query_model.username == query_with.username).first()\ndef find_by_email(query_db, query_model: User, query_with: UserCreate) -> bool:\n    return query_db.query(query_model).filter(\n        query_model.email == query_with.email).first()",
+        "detail": "app.libs.reuses",
+        "documentation": {}
+    },
+    {
+        "label": "find_by_email",
+        "kind": 2,
+        "importPath": "app.libs.reuses",
+        "description": "app.libs.reuses",
+        "peekOfCode": "def find_by_email(query_db, query_model: User, query_with: UserCreate) -> bool:\n    return query_db.query(query_model).filter(\n        query_model.email == query_with.email).first()",
+        "detail": "app.libs.reuses",
         "documentation": {}
     },
     {
@@ -464,21 +506,21 @@
         "documentation": {}
     },
     {
+        "label": "ERoles",
+        "kind": 6,
+        "importPath": "app.utils.common",
+        "description": "app.utils.common",
+        "peekOfCode": "class ERoles(PyEnum):\n    USER = \"USER\"\n    ADMIN = \"ADMIN\"\n    VENDOR = \"VENDOR\"",
+        "detail": "app.utils.common",
+        "documentation": {}
+    },
+    {
         "label": "loadDotenv",
         "kind": 2,
         "importPath": "app.utils.loadDotenv",
         "description": "app.utils.loadDotenv",
         "peekOfCode": "def loadDotenv():\n    load_dotenv(find_dotenv())",
         "detail": "app.utils.loadDotenv",
-        "documentation": {}
-    },
-    {
-        "label": "ERoles",
-        "kind": 6,
-        "importPath": "app.utils.utils",
-        "description": "app.utils.utils",
-        "peekOfCode": "class ERoles(PyEnum):\n    USER = \"USER\"\n    ADMIN = \"ADMIN\"\n    VENDOR = \"VENDOR\"",
-        "detail": "app.utils.utils",
         "documentation": {}
     },
     {

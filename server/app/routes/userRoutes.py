@@ -2,10 +2,10 @@ from fastapi import APIRouter, status, Depends
 from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
 from app.configs.database import get_db
-from app.controllers.userController import get_users, write_user
-from app.schemas.userSchema import UserCreate
+from app.controllers.userController import get_users, update_user, write_user
+from app.schemas.userSchema import UserSchema, UserUpdateSchema
 from app.models.userModel import User
-from app.libs.reuses import find_by_username
+from app.libs.reuses import find_by_username, find_by_uuid
 
 router = APIRouter()
 
@@ -25,7 +25,7 @@ async def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_
 
 
 @router.post("/", tags=["Create User"])
-async def create_user(user: UserCreate, db: Session = Depends(get_db)):
+async def create_user(user: UserSchema, db: Session = Depends(get_db)):
     try:
         # find user with username
         isUser = find_by_username(db, User, user)
@@ -51,6 +51,36 @@ async def create_user(user: UserCreate, db: Session = Depends(get_db)):
                 }
             },
             status_code=status.HTTP_201_CREATED
+        )
+    except Exception as err:
+        return JSONResponse(
+            content={
+                "message": "Something went wrong!",
+                "error": str(err)  # Convert the error to a string
+            },
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR
+        )
+
+
+@router.put("/{uuid}", tags=["Update User"])
+async def update(uuid: str, user_data: UserUpdateSchema, db: Session = Depends(get_db)):
+    try:
+        isUser = find_by_uuid(db, User, uuid)
+        if isUser is None:
+            return JSONResponse(
+                content={
+                    "message": "User not found!"
+                },
+                status_code=status.HTTP_400_BAD_REQUEST
+            )
+
+        updated = update_user(db, user_data, isUser)
+        return JSONResponse(
+            content={
+                "message": "Profile updated successfully",
+                "user": str(updated)
+            },
+            status_code=status.HTTP_200_OK
         )
     except Exception as err:
         return JSONResponse(

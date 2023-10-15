@@ -49,6 +49,22 @@
         "documentation": {}
     },
     {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "Enum",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -89,6 +105,14 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
         "label": "loadDotenv",
         "importPath": "app.utils.loadDotenv",
         "description": "app.utils.loadDotenv",
@@ -97,86 +121,6 @@
         "documentation": {}
     },
     {
-        "label": "JSONResponse",
-        "importPath": "fastapi.responses",
-        "description": "fastapi.responses",
-        "isExtraImport": true,
-        "detail": "fastapi.responses",
-        "documentation": {}
-    },
-    {
-        "label": "JSONResponse",
-        "importPath": "fastapi.responses",
-        "description": "fastapi.responses",
-        "isExtraImport": true,
-        "detail": "fastapi.responses",
-        "documentation": {}
-    },
-    {
-        "label": "JSONResponse",
-        "importPath": "fastapi.responses",
-        "description": "fastapi.responses",
-        "isExtraImport": true,
-        "detail": "fastapi.responses",
-        "documentation": {}
-    },
-    {
-        "label": "status",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "APIRouter",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "APIRouter",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "status",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "Depends",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "FastAPI",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "status",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
         "label": "User",
         "importPath": "app.models.userModel",
         "description": "app.models.userModel",
@@ -201,7 +145,7 @@
         "documentation": {}
     },
     {
-        "label": "UserCreate",
+        "label": "UserSchema",
         "importPath": "app.schemas.userSchema",
         "description": "app.schemas.userSchema",
         "isExtraImport": true,
@@ -209,7 +153,7 @@
         "documentation": {}
     },
     {
-        "label": "UserCreate",
+        "label": "UserUpdateSchema",
         "importPath": "app.schemas.userSchema",
         "description": "app.schemas.userSchema",
         "isExtraImport": true,
@@ -217,7 +161,23 @@
         "documentation": {}
     },
     {
-        "label": "UserCreate",
+        "label": "UserSchema",
+        "importPath": "app.schemas.userSchema",
+        "description": "app.schemas.userSchema",
+        "isExtraImport": true,
+        "detail": "app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "UserSchema",
+        "importPath": "app.schemas.userSchema",
+        "description": "app.schemas.userSchema",
+        "isExtraImport": true,
+        "detail": "app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "UserUpdateSchema",
         "importPath": "app.schemas.userSchema",
         "description": "app.schemas.userSchema",
         "isExtraImport": true,
@@ -274,22 +234,6 @@
         "documentation": {}
     },
     {
-        "label": "ERoles",
-        "importPath": "app.utils.common",
-        "description": "app.utils.common",
-        "isExtraImport": true,
-        "detail": "app.utils.common",
-        "documentation": {}
-    },
-    {
-        "label": "ERoles",
-        "importPath": "app.utils.common",
-        "description": "app.utils.common",
-        "isExtraImport": true,
-        "detail": "app.utils.common",
-        "documentation": {}
-    },
-    {
         "label": "datetime",
         "kind": 6,
         "isExtraImport": true,
@@ -299,7 +243,103 @@
         "documentation": {}
     },
     {
+        "label": "ERoles",
+        "importPath": "app.utils.common",
+        "description": "app.utils.common",
+        "isExtraImport": true,
+        "detail": "app.utils.common",
+        "documentation": {}
+    },
+    {
+        "label": "ERoles",
+        "importPath": "app.utils.common",
+        "description": "app.utils.common",
+        "isExtraImport": true,
+        "detail": "app.utils.common",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModels",
+        "importPath": "app.models.baseModel",
+        "description": "app.models.baseModel",
+        "isExtraImport": true,
+        "detail": "app.models.baseModel",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
         "label": "get_users",
+        "importPath": "app.controllers.userController",
+        "description": "app.controllers.userController",
+        "isExtraImport": true,
+        "detail": "app.controllers.userController",
+        "documentation": {}
+    },
+    {
+        "label": "update_user",
         "importPath": "app.controllers.userController",
         "description": "app.controllers.userController",
         "isExtraImport": true,
@@ -316,6 +356,14 @@
     },
     {
         "label": "find_by_username",
+        "importPath": "app.libs.reuses",
+        "description": "app.libs.reuses",
+        "isExtraImport": true,
+        "detail": "app.libs.reuses",
+        "documentation": {}
+    },
+    {
+        "label": "find_by_uuid",
         "importPath": "app.libs.reuses",
         "description": "app.libs.reuses",
         "isExtraImport": true,
@@ -411,7 +459,7 @@
         "kind": 2,
         "importPath": "app.controllers.userController",
         "description": "app.controllers.userController",
-        "peekOfCode": "def get_users(db: Session, skip: int = 0, limit: int = 100):\n    return db.query(User).offset(skip).limit(limit).all()\ndef write_user(db: Session, user: UserCreate):\n    db_user = User(\n        name=user.name,\n        username=user.username,\n        email=user.email,\n        password=hash_password(user.password),\n        role=user.role\n    )",
+        "peekOfCode": "def get_users(db: Session, skip: int = 0, limit: int = 100):\n    return db.query(User).offset(skip).limit(limit).all()\ndef write_user(db: Session, user: UserSchema):\n    db_user = User(\n        name=user.name,\n        username=user.username,\n        email=user.email,\n        password=hash_password(user.password),\n        role=user.role\n    )",
         "detail": "app.controllers.userController",
         "documentation": {}
     },
@@ -420,7 +468,16 @@
         "kind": 2,
         "importPath": "app.controllers.userController",
         "description": "app.controllers.userController",
-        "peekOfCode": "def write_user(db: Session, user: UserCreate):\n    db_user = User(\n        name=user.name,\n        username=user.username,\n        email=user.email,\n        password=hash_password(user.password),\n        role=user.role\n    )\n    db.add(db_user)\n    db.commit()",
+        "peekOfCode": "def write_user(db: Session, user: UserSchema):\n    db_user = User(\n        name=user.name,\n        username=user.username,\n        email=user.email,\n        password=hash_password(user.password),\n        role=user.role\n    )\n    db.add(db_user)\n    db.commit()",
+        "detail": "app.controllers.userController",
+        "documentation": {}
+    },
+    {
+        "label": "update_user",
+        "kind": 2,
+        "importPath": "app.controllers.userController",
+        "description": "app.controllers.userController",
+        "peekOfCode": "def update_user(db: Session, user_data, isUser: User):\n    return user_data\n    if user_data.name:\n        isUser.name = user_data.name\n    if user_data.username:\n        isUser.username = user_data.username\n    if user_data.email:\n        isUser.email = user_data.email\n    if user_data.role:\n        isUser.role = user_data.role",
         "detail": "app.controllers.userController",
         "documentation": {}
     },
@@ -429,7 +486,7 @@
         "kind": 2,
         "importPath": "app.libs.reuses",
         "description": "app.libs.reuses",
-        "peekOfCode": "def find_by_username(query_db, query_model: User, query_with: UserCreate) -> bool:\n    return query_db.query(query_model).filter(\n        query_model.username == query_with.username).first()\ndef find_by_email(query_db, query_model: User, query_with: UserCreate) -> bool:\n    return query_db.query(query_model).filter(\n        query_model.email == query_with.email).first()",
+        "peekOfCode": "def find_by_username(query_db: Session, query_model: User, query_with: UserSchema) -> bool:\n    return query_db.query(query_model).filter(\n        query_model.username == query_with.username).first()\ndef find_by_email(query_db: Session, query_model: User, query_with: UserSchema) -> bool:\n    return query_db.query(query_model).filter(\n        query_model.email == query_with.email).first()\ndef find_by_uuid(query_db: Session, query_model: User, uuid: str) -> bool:\n    return query_db.query(query_model).filter(\n        query_model.uuid == uuid).first()",
         "detail": "app.libs.reuses",
         "documentation": {}
     },
@@ -438,8 +495,26 @@
         "kind": 2,
         "importPath": "app.libs.reuses",
         "description": "app.libs.reuses",
-        "peekOfCode": "def find_by_email(query_db, query_model: User, query_with: UserCreate) -> bool:\n    return query_db.query(query_model).filter(\n        query_model.email == query_with.email).first()",
+        "peekOfCode": "def find_by_email(query_db: Session, query_model: User, query_with: UserSchema) -> bool:\n    return query_db.query(query_model).filter(\n        query_model.email == query_with.email).first()\ndef find_by_uuid(query_db: Session, query_model: User, uuid: str) -> bool:\n    return query_db.query(query_model).filter(\n        query_model.uuid == uuid).first()",
         "detail": "app.libs.reuses",
+        "documentation": {}
+    },
+    {
+        "label": "find_by_uuid",
+        "kind": 2,
+        "importPath": "app.libs.reuses",
+        "description": "app.libs.reuses",
+        "peekOfCode": "def find_by_uuid(query_db: Session, query_model: User, uuid: str) -> bool:\n    return query_db.query(query_model).filter(\n        query_model.uuid == uuid).first()",
+        "detail": "app.libs.reuses",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModels",
+        "kind": 6,
+        "importPath": "app.models.baseModel",
+        "description": "app.models.baseModel",
+        "peekOfCode": "class BaseModels(Base):\n    __abstract__ = True\n    id = Column(Integer, primary_key=True, index=True)\n    uuid = Column(String(36), unique=True, default=lambda: str(uuid.uuid4()))\n    created_at = Column(DateTime, default=datetime.datetime.now())\n    updated_at = Column(DateTime, default=datetime.datetime.now(),\n                        onupdate=datetime.datetime.now())",
+        "detail": "app.models.baseModel",
         "documentation": {}
     },
     {
@@ -447,7 +522,7 @@
         "kind": 6,
         "importPath": "app.models.userModel",
         "description": "app.models.userModel",
-        "peekOfCode": "class User(Base):\n    __tablename__ = \"Users\"\n    id = Column(Integer, primary_key=True, index=True)\n    uuid = Column(String(36), unique=True,\n                  default=str(uuid.uuid4()))\n    name = Column(String(256), nullable=True)\n    username = Column(String(256), unique=True)\n    email = Column(String(256), unique=True)\n    password = Column(String(256))\n    role = Column(Enum(ERoles), default=ERoles.USER)",
+        "peekOfCode": "class User(BaseModels):\n    __tablename__ = \"Users\"\n    name = Column(String(256), nullable=True)\n    username = Column(String(256), unique=True)\n    email = Column(String(256), unique=True)\n    password = Column(String(256))\n    role = Column(Enum(ERoles), default=ERoles.USER)",
         "detail": "app.models.userModel",
         "documentation": {}
     },
@@ -470,11 +545,20 @@
         "documentation": {}
     },
     {
-        "label": "UserCreate",
+        "label": "UserSchema",
         "kind": 6,
         "importPath": "app.schemas.userSchema",
         "description": "app.schemas.userSchema",
-        "peekOfCode": "class UserCreate(BaseModel):\n    name: str\n    username: str\n    email: str\n    password: str\n    role: str = ERoles",
+        "peekOfCode": "class UserSchema(BaseModel):\n    name: str\n    username: str\n    email: str\n    password: str\n    role: str = ERoles\nclass UserUpdateSchema(BaseModel):\n    name: str\n    email: str\n    username: str",
+        "detail": "app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "UserUpdateSchema",
+        "kind": 6,
+        "importPath": "app.schemas.userSchema",
+        "description": "app.schemas.userSchema",
+        "peekOfCode": "class UserUpdateSchema(BaseModel):\n    name: str\n    email: str\n    username: str\n    role: str\n    password: str",
         "detail": "app.schemas.userSchema",
         "documentation": {}
     },

@@ -419,14 +419,6 @@
         "documentation": {}
     },
     {
-        "label": "status",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
         "label": "JSONResponse",
         "importPath": "fastapi.responses",
         "description": "fastapi.responses",
@@ -556,6 +548,14 @@
     },
     {
         "label": "userRoutes",
+        "importPath": "app.routes",
+        "description": "app.routes",
+        "isExtraImport": true,
+        "detail": "app.routes",
+        "documentation": {}
+    },
+    {
+        "label": "productRoutes",
         "importPath": "app.routes",
         "description": "app.routes",
         "isExtraImport": true,
@@ -801,7 +801,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "app = FastAPI()\napp.include_router(userRoutes.router, prefix=\"/api/v1/users\")\n@app.get(\"/\", tags=[\"Checker\"])\nasync def checker():\n    return JSONResponse(\n        content={\n            \"Working\": True,\n            \"Hello\": \"World\"\n        }\n    )",
+        "peekOfCode": "app = FastAPI()\napp.include_router(userRoutes.router, prefix=\"/api/v1/users\")\napp.include_router(productRoutes.router, prefix=\"/api/v1/products\")\n@app.get(\"/\", tags=[\"Checker\"])\nasync def checker():\n    return JSONResponse(\n        content={\n            \"Working\": True,\n            \"Hello\": \"World\"\n        }",
         "detail": "main",
         "documentation": {}
     }

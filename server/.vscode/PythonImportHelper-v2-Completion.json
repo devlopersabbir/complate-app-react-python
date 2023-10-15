@@ -507,6 +507,14 @@
         "documentation": {}
     },
     {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
         "label": "Optional",
         "importPath": "typing",
         "description": "typing",
@@ -714,6 +722,15 @@
         "description": "app.routes.userRoutes",
         "peekOfCode": "router = APIRouter()\n@router.get(\"/\", tags=[\"Get User\"])\nasync def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):\n    users = get_users(db, skip=skip, limit=limit)\n    if not users:\n        return JSONResponse(\n            content={\n                \"message\": \"No user found!\",\n            },\n            status_code=status.HTTP_404_NOT_FOUND",
         "detail": "app.routes.userRoutes",
+        "documentation": {}
+    },
+    {
+        "label": "ProductSchema",
+        "kind": 6,
+        "importPath": "app.schemas.productSchema",
+        "description": "app.schemas.productSchema",
+        "peekOfCode": "class ProductSchema(BaseModel):\n    title: str\n    slug: str\n    description: str\n    price: int",
+        "detail": "app.schemas.productSchema",
         "documentation": {}
     },
     {

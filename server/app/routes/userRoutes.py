@@ -53,6 +53,7 @@ async def create_user(user: UserSchema, db: Session = Depends(get_db)):
             status_code=status.HTTP_201_CREATED
         )
     except Exception as err:
+        print(err)
         return JSONResponse(
             content={
                 "message": "Something went wrong!",
@@ -73,12 +74,17 @@ async def update(uuid: str, user_data: UserUpdateSchema, db: Session = Depends(g
                 },
                 status_code=status.HTTP_400_BAD_REQUEST
             )
-
         updated = update_user(db, user_data, isUser)
         return JSONResponse(
             content={
                 "message": "Profile updated successfully",
-                "user": str(updated)
+                "user": {
+                    "uuid": updated.uuid,
+                    "name": updated.name,
+                    "username": updated.username,
+                    "role": updated.role.value,
+                    "updated_at": str(updated.updated_at)
+                }
             },
             status_code=status.HTTP_200_OK
         )

@@ -379,6 +379,14 @@
         "documentation": {}
     },
     {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "CryptContext",
         "importPath": "passlib.context",
         "description": "passlib.context",
@@ -477,7 +485,7 @@
         "kind": 2,
         "importPath": "app.controllers.userController",
         "description": "app.controllers.userController",
-        "peekOfCode": "def update_user(db: Session, user_data, isUser: User):\n    return user_data\n    if user_data.name:\n        isUser.name = user_data.name\n    if user_data.username:\n        isUser.username = user_data.username\n    if user_data.email:\n        isUser.email = user_data.email\n    if user_data.role:\n        isUser.role = user_data.role",
+        "peekOfCode": "def update_user(db: Session, user_data: UserUpdateSchema, isUser: User):\n    for key, value in user_data.dict().items():\n        if value:\n            setattr(isUser, key, value)\n    db.commit()\n    db.refresh(isUser)\n    return isUser",
         "detail": "app.controllers.userController",
         "documentation": {}
     },
@@ -549,7 +557,7 @@
         "kind": 6,
         "importPath": "app.schemas.userSchema",
         "description": "app.schemas.userSchema",
-        "peekOfCode": "class UserSchema(BaseModel):\n    name: str\n    username: str\n    email: str\n    password: str\n    role: str = ERoles\nclass UserUpdateSchema(BaseModel):\n    name: str\n    email: str\n    username: str",
+        "peekOfCode": "class UserSchema(BaseModel):\n    name: str\n    username: str\n    email: str\n    password: str\n    role: str = ERoles\nclass UserUpdateSchema(BaseModel):\n    name: Optional[str] = None\n    email: Optional[str] = None\n    username: Optional[str] = None",
         "detail": "app.schemas.userSchema",
         "documentation": {}
     },
@@ -558,7 +566,7 @@
         "kind": 6,
         "importPath": "app.schemas.userSchema",
         "description": "app.schemas.userSchema",
-        "peekOfCode": "class UserUpdateSchema(BaseModel):\n    name: str\n    email: str\n    username: str\n    role: str\n    password: str",
+        "peekOfCode": "class UserUpdateSchema(BaseModel):\n    name: Optional[str] = None\n    email: Optional[str] = None\n    username: Optional[str] = None\n    role: Optional[str] = None\n    password: Optional[str] = None",
         "detail": "app.schemas.userSchema",
         "documentation": {}
     },

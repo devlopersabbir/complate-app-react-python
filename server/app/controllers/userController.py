@@ -22,18 +22,10 @@ def write_user(db: Session, user: UserSchema):
     return db_user
 
 
-def update_user(db: Session, user_data, isUser: User):
-    return user_data
-    if user_data.name:
-        isUser.name = user_data.name
-    if user_data.username:
-        isUser.username = user_data.username
-    if user_data.email:
-        isUser.email = user_data.email
-    if user_data.role:
-        isUser.role = user_data.role
-    if user_data.password:
-        isUser.password = hash_password(user_data.password)
-
+def update_user(db: Session, user_data: UserUpdateSchema, isUser: User):
+    for key, value in user_data.dict().items():
+        if value:
+            setattr(isUser, key, value)
     db.commit()
-    db.refresh()
+    db.refresh(isUser)
+    return isUser

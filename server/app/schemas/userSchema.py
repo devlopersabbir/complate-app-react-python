@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 from app.utils.common import ERoles
+from typing import Optional
 
 
 class UserSchema(BaseModel):
@@ -11,8 +12,8 @@ class UserSchema(BaseModel):
 
 
 class UserUpdateSchema(BaseModel):
-    name: str
-    email: str
-    username: str
-    role: str
-    password: str
+    name: Optional[str] = None
+    email: Optional[str] = None
+    username: Optional[str] = None
+    role: Optional[str] = None
+    password: Optional[str] = None

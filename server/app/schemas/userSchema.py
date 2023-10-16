@@ -17,3 +17,8 @@ class UserUpdateSchema(BaseModel):
     username: Optional[str] = None
     role: Optional[str] = None
     password: Optional[str] = None
+
+
+class UserLoginSchema(BaseModel):
+    username: str
+    password: str

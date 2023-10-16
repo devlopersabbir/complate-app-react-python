@@ -169,6 +169,22 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
         "label": "loadDotenv",
         "importPath": "app.utils.loadDotenv",
         "description": "app.utils.loadDotenv",
@@ -177,193 +193,31 @@
         "documentation": {}
     },
     {
-        "label": "Product",
-        "importPath": "app.models.productModel",
-        "description": "app.models.productModel",
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
         "isExtraImport": true,
-        "detail": "app.models.productModel",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "app.models.productModel",
-        "description": "app.models.productModel",
-        "isExtraImport": true,
-        "detail": "app.models.productModel",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "app.models.userModel",
-        "description": "app.models.userModel",
-        "isExtraImport": true,
-        "detail": "app.models.userModel",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "app.models.userModel",
-        "description": "app.models.userModel",
-        "isExtraImport": true,
-        "detail": "app.models.userModel",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "app.models.userModel",
-        "description": "app.models.userModel",
-        "isExtraImport": true,
-        "detail": "app.models.userModel",
-        "documentation": {}
-    },
-    {
-        "label": "UserSchema",
-        "importPath": "app.schemas.userSchema",
-        "description": "app.schemas.userSchema",
-        "isExtraImport": true,
-        "detail": "app.schemas.userSchema",
-        "documentation": {}
-    },
-    {
-        "label": "UserUpdateSchema",
-        "importPath": "app.schemas.userSchema",
-        "description": "app.schemas.userSchema",
-        "isExtraImport": true,
-        "detail": "app.schemas.userSchema",
-        "documentation": {}
-    },
-    {
-        "label": "UserSchema",
-        "importPath": "app.schemas.userSchema",
-        "description": "app.schemas.userSchema",
-        "isExtraImport": true,
-        "detail": "app.schemas.userSchema",
-        "documentation": {}
-    },
-    {
-        "label": "UserSchema",
-        "importPath": "app.schemas.userSchema",
-        "description": "app.schemas.userSchema",
-        "isExtraImport": true,
-        "detail": "app.schemas.userSchema",
-        "documentation": {}
-    },
-    {
-        "label": "UserUpdateSchema",
-        "importPath": "app.schemas.userSchema",
-        "description": "app.schemas.userSchema",
-        "isExtraImport": true,
-        "detail": "app.schemas.userSchema",
-        "documentation": {}
-    },
-    {
-        "label": "hash_password",
-        "importPath": "app.services.services",
-        "description": "app.services.services",
-        "isExtraImport": true,
-        "detail": "app.services.services",
-        "documentation": {}
-    },
-    {
-        "label": "hash_password",
-        "importPath": "app.services.services",
-        "description": "app.services.services",
-        "isExtraImport": true,
-        "detail": "app.services.services",
-        "documentation": {}
-    },
-    {
-        "label": "uuid",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "uuid",
-        "description": "uuid",
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "Base",
-        "importPath": "app.configs.database",
-        "description": "app.configs.database",
-        "isExtraImport": true,
-        "detail": "app.configs.database",
-        "documentation": {}
-    },
-    {
-        "label": "get_db",
-        "importPath": "app.configs.database",
-        "description": "app.configs.database",
-        "isExtraImport": true,
-        "detail": "app.configs.database",
-        "documentation": {}
-    },
-    {
-        "label": "get_db",
-        "importPath": "app.configs.database",
-        "description": "app.configs.database",
-        "isExtraImport": true,
-        "detail": "app.configs.database",
-        "documentation": {}
-    },
-    {
-        "label": "Base",
-        "importPath": "app.configs.database",
-        "description": "app.configs.database",
-        "isExtraImport": true,
-        "detail": "app.configs.database",
-        "documentation": {}
-    },
-    {
-        "label": "engine",
-        "importPath": "app.configs.database",
-        "description": "app.configs.database",
-        "isExtraImport": true,
-        "detail": "app.configs.database",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "datetime",
-        "description": "datetime",
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "BaseModels",
-        "importPath": "app.models.baseModel",
-        "description": "app.models.baseModel",
-        "isExtraImport": true,
-        "detail": "app.models.baseModel",
-        "documentation": {}
-    },
-    {
-        "label": "BaseModels",
-        "importPath": "app.models.baseModel",
-        "description": "app.models.baseModel",
-        "isExtraImport": true,
-        "detail": "app.models.baseModel",
-        "documentation": {}
-    },
-    {
-        "label": "ERoles",
-        "importPath": "app.utils.common",
-        "description": "app.utils.common",
-        "isExtraImport": true,
-        "detail": "app.utils.common",
-        "documentation": {}
-    },
-    {
-        "label": "ERoles",
-        "importPath": "app.utils.common",
-        "description": "app.utils.common",
-        "isExtraImport": true,
-        "detail": "app.utils.common",
+        "detail": "fastapi",
         "documentation": {}
     },
     {
         "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -451,6 +305,280 @@
         "documentation": {}
     },
     {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "UserLoginSchema",
+        "importPath": "app.schemas.userSchema",
+        "description": "app.schemas.userSchema",
+        "isExtraImport": true,
+        "detail": "app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "UserSchema",
+        "importPath": "app.schemas.userSchema",
+        "description": "app.schemas.userSchema",
+        "isExtraImport": true,
+        "detail": "app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "UserUpdateSchema",
+        "importPath": "app.schemas.userSchema",
+        "description": "app.schemas.userSchema",
+        "isExtraImport": true,
+        "detail": "app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "UserLoginSchema",
+        "importPath": "app.schemas.userSchema",
+        "description": "app.schemas.userSchema",
+        "isExtraImport": true,
+        "detail": "app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "UserSchema",
+        "importPath": "app.schemas.userSchema",
+        "description": "app.schemas.userSchema",
+        "isExtraImport": true,
+        "detail": "app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "UserLoginSchema",
+        "importPath": "app.schemas.userSchema",
+        "description": "app.schemas.userSchema",
+        "isExtraImport": true,
+        "detail": "app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "UserSchema",
+        "importPath": "app.schemas.userSchema",
+        "description": "app.schemas.userSchema",
+        "isExtraImport": true,
+        "detail": "app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "UserUpdateSchema",
+        "importPath": "app.schemas.userSchema",
+        "description": "app.schemas.userSchema",
+        "isExtraImport": true,
+        "detail": "app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "find_by_username",
+        "importPath": "app.libs.reuses",
+        "description": "app.libs.reuses",
+        "isExtraImport": true,
+        "detail": "app.libs.reuses",
+        "documentation": {}
+    },
+    {
+        "label": "find_by_username",
+        "importPath": "app.libs.reuses",
+        "description": "app.libs.reuses",
+        "isExtraImport": true,
+        "detail": "app.libs.reuses",
+        "documentation": {}
+    },
+    {
+        "label": "find_by_uuid",
+        "importPath": "app.libs.reuses",
+        "description": "app.libs.reuses",
+        "isExtraImport": true,
+        "detail": "app.libs.reuses",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.userModel",
+        "description": "app.models.userModel",
+        "isExtraImport": true,
+        "detail": "app.models.userModel",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.userModel",
+        "description": "app.models.userModel",
+        "isExtraImport": true,
+        "detail": "app.models.userModel",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.userModel",
+        "description": "app.models.userModel",
+        "isExtraImport": true,
+        "detail": "app.models.userModel",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.userModel",
+        "description": "app.models.userModel",
+        "isExtraImport": true,
+        "detail": "app.models.userModel",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "app.models.productModel",
+        "description": "app.models.productModel",
+        "isExtraImport": true,
+        "detail": "app.models.productModel",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "app.models.productModel",
+        "description": "app.models.productModel",
+        "isExtraImport": true,
+        "detail": "app.models.productModel",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "importPath": "app.services.services",
+        "description": "app.services.services",
+        "isExtraImport": true,
+        "detail": "app.services.services",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "importPath": "app.services.services",
+        "description": "app.services.services",
+        "isExtraImport": true,
+        "detail": "app.services.services",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "isExtraImport": true,
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "isExtraImport": true,
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "isExtraImport": true,
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "isExtraImport": true,
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "isExtraImport": true,
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "isExtraImport": true,
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModels",
+        "importPath": "app.models.baseModel",
+        "description": "app.models.baseModel",
+        "isExtraImport": true,
+        "detail": "app.models.baseModel",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModels",
+        "importPath": "app.models.baseModel",
+        "description": "app.models.baseModel",
+        "isExtraImport": true,
+        "detail": "app.models.baseModel",
+        "documentation": {}
+    },
+    {
+        "label": "ERoles",
+        "importPath": "app.utils.common",
+        "description": "app.utils.common",
+        "isExtraImport": true,
+        "detail": "app.utils.common",
+        "documentation": {}
+    },
+    {
+        "label": "ERoles",
+        "importPath": "app.utils.common",
+        "description": "app.utils.common",
+        "isExtraImport": true,
+        "detail": "app.utils.common",
+        "documentation": {}
+    },
+    {
+        "label": "auth_login",
+        "importPath": "app.controllers.authController",
+        "description": "app.controllers.authController",
+        "isExtraImport": true,
+        "detail": "app.controllers.authController",
+        "documentation": {}
+    },
+    {
         "label": "getAllProduct",
         "importPath": "app.controllers.productController",
         "description": "app.controllers.productController",
@@ -480,22 +608,6 @@
         "description": "app.controllers.userController",
         "isExtraImport": true,
         "detail": "app.controllers.userController",
-        "documentation": {}
-    },
-    {
-        "label": "find_by_username",
-        "importPath": "app.libs.reuses",
-        "description": "app.libs.reuses",
-        "isExtraImport": true,
-        "detail": "app.libs.reuses",
-        "documentation": {}
-    },
-    {
-        "label": "find_by_uuid",
-        "importPath": "app.libs.reuses",
-        "description": "app.libs.reuses",
-        "isExtraImport": true,
-        "detail": "app.libs.reuses",
         "documentation": {}
     },
     {
@@ -552,6 +664,14 @@
         "description": "dotenv",
         "isExtraImport": true,
         "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "authRoutes",
+        "importPath": "app.routes",
+        "description": "app.routes",
+        "isExtraImport": true,
+        "detail": "app.routes",
         "documentation": {}
     },
     {
@@ -647,7 +767,7 @@
         "kind": 2,
         "importPath": "app.libs.reuses",
         "description": "app.libs.reuses",
-        "peekOfCode": "def find_by_username(query_db: Session, query_model: User, query_with: UserSchema) -> bool:\n    return query_db.query(query_model).filter(\n        query_model.username == query_with.username).first()\ndef find_by_email(query_db: Session, query_model: User, query_with: UserSchema) -> bool:\n    return query_db.query(query_model).filter(\n        query_model.email == query_with.email).first()\ndef find_by_uuid(query_db: Session, query_model: User, uuid: str) -> bool:\n    return query_db.query(query_model).filter(\n        query_model.uuid == uuid).first()",
+        "peekOfCode": "def find_by_username(query_db: Session, query_model: User, query_with: UserSchema or UserLoginSchema) -> bool:\n    return query_db.query(query_model).filter(\n        query_model.username == query_with.username).first()\ndef find_by_email(query_db: Session, query_model: User, query_with: UserSchema) -> bool:\n    return query_db.query(query_model).filter(\n        query_model.email == query_with.email).first()\ndef find_by_uuid(query_db: Session, query_model: User, uuid: str) -> bool:\n    return query_db.query(query_model).filter(\n        query_model.uuid == uuid).first()",
         "detail": "app.libs.reuses",
         "documentation": {}
     },
@@ -710,7 +830,7 @@
         "kind": 5,
         "importPath": "app.routes.authRoutes",
         "description": "app.routes.authRoutes",
-        "peekOfCode": "router = APIRouter()\n@router.get(\"/\")\nasync def login():\n    return {\n        \"login\": True\n    }",
+        "peekOfCode": "router = APIRouter()\n@router.post(\"/login\", tags=[\"Login\"])\nasync def login(req_data: UserLoginSchema, db: Session = Depends(get_db)):\n    try:\n        return await auth_login(req_data, db)\n    except Exception as err:\n        return JSONResponse(\n            content={\n                \"message\": \"Something went wrong!\",\n                \"error\": str(err)",
         "detail": "app.routes.authRoutes",
         "documentation": {}
     },
@@ -755,7 +875,16 @@
         "kind": 6,
         "importPath": "app.schemas.userSchema",
         "description": "app.schemas.userSchema",
-        "peekOfCode": "class UserUpdateSchema(BaseModel):\n    name: Optional[str] = None\n    email: Optional[str] = None\n    username: Optional[str] = None\n    role: Optional[str] = None\n    password: Optional[str] = None",
+        "peekOfCode": "class UserUpdateSchema(BaseModel):\n    name: Optional[str] = None\n    email: Optional[str] = None\n    username: Optional[str] = None\n    role: Optional[str] = None\n    password: Optional[str] = None\nclass UserLoginSchema(BaseModel):\n    username: str\n    password: str",
+        "detail": "app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "UserLoginSchema",
+        "kind": 6,
+        "importPath": "app.schemas.userSchema",
+        "description": "app.schemas.userSchema",
+        "peekOfCode": "class UserLoginSchema(BaseModel):\n    username: str\n    password: str",
         "detail": "app.schemas.userSchema",
         "documentation": {}
     },
@@ -809,7 +938,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "app = FastAPI()\napp.include_router(userRoutes.router, prefix=\"/api/v1/users\")\napp.include_router(productRoutes.router, prefix=\"/api/v1/products\")\n@app.get(\"/\", tags=[\"Checker\"])\nasync def checker():\n    return JSONResponse(\n        content={\n            \"Working\": True,\n            \"Hello\": \"World\"\n        }",
+        "peekOfCode": "app = FastAPI()\napp.include_router(authRoutes.router, prefix=\"/api/v1/auth\")\napp.include_router(userRoutes.router, prefix=\"/api/v1/users\")\napp.include_router(productRoutes.router, prefix=\"/api/v1/products\")\n@app.get(\"/\", tags=[\"Checker\"])\nasync def checker():\n    return JSONResponse(\n        content={\n            \"Working\": True,\n            \"Hello\": \"World\"",
         "detail": "main",
         "documentation": {}
     }

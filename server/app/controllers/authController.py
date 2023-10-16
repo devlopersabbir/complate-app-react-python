@@ -7,6 +7,8 @@ from app.models.userModel import User
 from fastapi.security import OAuth2PasswordBearer
 from app.services.services import verify_password
 
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
+
 
 async def auth_login(req_data: UserLoginSchema, db: Session):
     if not req_data.username or not req_data.password:

@@ -49,7 +49,63 @@
         "documentation": {}
     },
     {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Float",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "Enum",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "event",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -89,6 +145,46 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
         "label": "loadDotenv",
         "importPath": "app.utils.loadDotenv",
         "description": "app.utils.loadDotenv",
@@ -97,113 +193,55 @@
         "documentation": {}
     },
     {
-        "label": "User",
-        "importPath": "app.models.userModel",
-        "description": "app.models.userModel",
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
         "isExtraImport": true,
-        "detail": "app.models.userModel",
-        "documentation": {}
-    },
-    {
-        "label": "UserCreate",
-        "importPath": "app.schemas.userSchema",
-        "description": "app.schemas.userSchema",
-        "isExtraImport": true,
-        "detail": "app.schemas.userSchema",
-        "documentation": {}
-    },
-    {
-        "label": "UserCreate",
-        "importPath": "app.schemas.userSchema",
-        "description": "app.schemas.userSchema",
-        "isExtraImport": true,
-        "detail": "app.schemas.userSchema",
-        "documentation": {}
-    },
-    {
-        "label": "hash_password",
-        "importPath": "app.services.services",
-        "description": "app.services.services",
-        "isExtraImport": true,
-        "detail": "app.services.services",
-        "documentation": {}
-    },
-    {
-        "label": "hash_password",
-        "importPath": "app.services.services",
-        "description": "app.services.services",
-        "isExtraImport": true,
-        "detail": "app.services.services",
-        "documentation": {}
-    },
-    {
-        "label": "verify_password",
-        "importPath": "app.services.services",
-        "description": "app.services.services",
-        "isExtraImport": true,
-        "detail": "app.services.services",
-        "documentation": {}
-    },
-    {
-        "label": "uuid",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "uuid",
-        "description": "uuid",
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "Base",
-        "importPath": "app.configs.database",
-        "description": "app.configs.database",
-        "isExtraImport": true,
-        "detail": "app.configs.database",
-        "documentation": {}
-    },
-    {
-        "label": "get_db",
-        "importPath": "app.configs.database",
-        "description": "app.configs.database",
-        "isExtraImport": true,
-        "detail": "app.configs.database",
-        "documentation": {}
-    },
-    {
-        "label": "func",
-        "importPath": "sqlalchemy.sql",
-        "description": "sqlalchemy.sql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.sql",
-        "documentation": {}
-    },
-    {
-        "label": "ERoles",
-        "importPath": "app.utils.utils",
-        "description": "app.utils.utils",
-        "isExtraImport": true,
-        "detail": "app.utils.utils",
-        "documentation": {}
-    },
-    {
-        "label": "ERoles",
-        "importPath": "app.utils.utils",
-        "description": "app.utils.utils",
-        "isExtraImport": true,
-        "detail": "app.utils.utils",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "datetime",
-        "description": "datetime",
-        "detail": "datetime",
+        "detail": "fastapi",
         "documentation": {}
     },
     {
         "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -243,11 +281,19 @@
         "documentation": {}
     },
     {
-        "label": "status",
-        "importPath": "fastapi",
-        "description": "fastapi",
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
         "isExtraImport": true,
-        "detail": "fastapi",
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
         "documentation": {}
     },
     {
@@ -264,10 +310,308 @@
         "description": "fastapi.responses",
         "isExtraImport": true,
         "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "UserLoginSchema",
+        "importPath": "app.schemas.userSchema",
+        "description": "app.schemas.userSchema",
+        "isExtraImport": true,
+        "detail": "app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "UserSchema",
+        "importPath": "app.schemas.userSchema",
+        "description": "app.schemas.userSchema",
+        "isExtraImport": true,
+        "detail": "app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "UserUpdateSchema",
+        "importPath": "app.schemas.userSchema",
+        "description": "app.schemas.userSchema",
+        "isExtraImport": true,
+        "detail": "app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "UserLoginSchema",
+        "importPath": "app.schemas.userSchema",
+        "description": "app.schemas.userSchema",
+        "isExtraImport": true,
+        "detail": "app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "UserSchema",
+        "importPath": "app.schemas.userSchema",
+        "description": "app.schemas.userSchema",
+        "isExtraImport": true,
+        "detail": "app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "UserLoginSchema",
+        "importPath": "app.schemas.userSchema",
+        "description": "app.schemas.userSchema",
+        "isExtraImport": true,
+        "detail": "app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "UserSchema",
+        "importPath": "app.schemas.userSchema",
+        "description": "app.schemas.userSchema",
+        "isExtraImport": true,
+        "detail": "app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "UserUpdateSchema",
+        "importPath": "app.schemas.userSchema",
+        "description": "app.schemas.userSchema",
+        "isExtraImport": true,
+        "detail": "app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "find_by_username",
+        "importPath": "app.libs.reuses",
+        "description": "app.libs.reuses",
+        "isExtraImport": true,
+        "detail": "app.libs.reuses",
+        "documentation": {}
+    },
+    {
+        "label": "find_by_username",
+        "importPath": "app.libs.reuses",
+        "description": "app.libs.reuses",
+        "isExtraImport": true,
+        "detail": "app.libs.reuses",
+        "documentation": {}
+    },
+    {
+        "label": "find_by_uuid",
+        "importPath": "app.libs.reuses",
+        "description": "app.libs.reuses",
+        "isExtraImport": true,
+        "detail": "app.libs.reuses",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.userModel",
+        "description": "app.models.userModel",
+        "isExtraImport": true,
+        "detail": "app.models.userModel",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.userModel",
+        "description": "app.models.userModel",
+        "isExtraImport": true,
+        "detail": "app.models.userModel",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.userModel",
+        "description": "app.models.userModel",
+        "isExtraImport": true,
+        "detail": "app.models.userModel",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.userModel",
+        "description": "app.models.userModel",
+        "isExtraImport": true,
+        "detail": "app.models.userModel",
+        "documentation": {}
+    },
+    {
+        "label": "OAuth2PasswordBearer",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
+        "isExtraImport": true,
+        "detail": "fastapi.security",
+        "documentation": {}
+    },
+    {
+        "label": "verify_password",
+        "importPath": "app.services.services",
+        "description": "app.services.services",
+        "isExtraImport": true,
+        "detail": "app.services.services",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "importPath": "app.services.services",
+        "description": "app.services.services",
+        "isExtraImport": true,
+        "detail": "app.services.services",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "importPath": "app.services.services",
+        "description": "app.services.services",
+        "isExtraImport": true,
+        "detail": "app.services.services",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "app.models.productModel",
+        "description": "app.models.productModel",
+        "isExtraImport": true,
+        "detail": "app.models.productModel",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "app.models.productModel",
+        "description": "app.models.productModel",
+        "isExtraImport": true,
+        "detail": "app.models.productModel",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "isExtraImport": true,
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "isExtraImport": true,
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "isExtraImport": true,
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "isExtraImport": true,
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "isExtraImport": true,
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "importPath": "app.configs.database",
+        "description": "app.configs.database",
+        "isExtraImport": true,
+        "detail": "app.configs.database",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModels",
+        "importPath": "app.models.baseModel",
+        "description": "app.models.baseModel",
+        "isExtraImport": true,
+        "detail": "app.models.baseModel",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModels",
+        "importPath": "app.models.baseModel",
+        "description": "app.models.baseModel",
+        "isExtraImport": true,
+        "detail": "app.models.baseModel",
+        "documentation": {}
+    },
+    {
+        "label": "ERoles",
+        "importPath": "app.utils.common",
+        "description": "app.utils.common",
+        "isExtraImport": true,
+        "detail": "app.utils.common",
+        "documentation": {}
+    },
+    {
+        "label": "ERoles",
+        "importPath": "app.utils.common",
+        "description": "app.utils.common",
+        "isExtraImport": true,
+        "detail": "app.utils.common",
+        "documentation": {}
+    },
+    {
+        "label": "auth_login",
+        "importPath": "app.controllers.authController",
+        "description": "app.controllers.authController",
+        "isExtraImport": true,
+        "detail": "app.controllers.authController",
+        "documentation": {}
+    },
+    {
+        "label": "getAllProduct",
+        "importPath": "app.controllers.productController",
+        "description": "app.controllers.productController",
+        "isExtraImport": true,
+        "detail": "app.controllers.productController",
         "documentation": {}
     },
     {
         "label": "get_users",
+        "importPath": "app.controllers.userController",
+        "description": "app.controllers.userController",
+        "isExtraImport": true,
+        "detail": "app.controllers.userController",
+        "documentation": {}
+    },
+    {
+        "label": "update_user",
         "importPath": "app.controllers.userController",
         "description": "app.controllers.userController",
         "isExtraImport": true,
@@ -291,11 +635,35 @@
         "documentation": {}
     },
     {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "CryptContext",
         "importPath": "passlib.context",
         "description": "passlib.context",
         "isExtraImport": true,
         "detail": "passlib.context",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
         "documentation": {}
     },
     {
@@ -315,7 +683,23 @@
         "documentation": {}
     },
     {
+        "label": "authRoutes",
+        "importPath": "app.routes",
+        "description": "app.routes",
+        "isExtraImport": true,
+        "detail": "app.routes",
+        "documentation": {}
+    },
+    {
         "label": "userRoutes",
+        "importPath": "app.routes",
+        "description": "app.routes",
+        "isExtraImport": true,
+        "detail": "app.routes",
+        "documentation": {}
+    },
+    {
+        "label": "productRoutes",
         "importPath": "app.routes",
         "description": "app.routes",
         "isExtraImport": true,
@@ -359,11 +743,20 @@
         "documentation": {}
     },
     {
+        "label": "getAllProduct",
+        "kind": 2,
+        "importPath": "server.app.controllers.productController",
+        "description": "server.app.controllers.productController",
+        "peekOfCode": "def getAllProduct(db: Session):\n    db.query(Product).all()",
+        "detail": "server.app.controllers.productController",
+        "documentation": {}
+    },
+    {
         "label": "get_users",
         "kind": 2,
         "importPath": "server.app.controllers.userController",
         "description": "server.app.controllers.userController",
-        "peekOfCode": "def get_users(db: Session, skip: int = 0, limit: int = 100):\n    return db.query(User).offset(skip).limit(limit).all()\ndef write_user(db: Session, user: UserCreate):\n    db_user = User(\n        names=user.names,\n        username=user.username,\n        email=user.email,\n        password=hash_password(user.password),\n        role=user.role\n    )",
+        "peekOfCode": "def get_users(db: Session, skip: int = 0, limit: int = 100):\n    return db.query(User).offset(skip).limit(limit).all()\ndef write_user(db: Session, user: UserSchema):\n    db_user = User(\n        name=user.name,\n        username=user.username,\n        email=user.email,\n        password=user.password,\n        role=user.role\n    )",
         "detail": "server.app.controllers.userController",
         "documentation": {}
     },
@@ -372,8 +765,62 @@
         "kind": 2,
         "importPath": "server.app.controllers.userController",
         "description": "server.app.controllers.userController",
-        "peekOfCode": "def write_user(db: Session, user: UserCreate):\n    db_user = User(\n        names=user.names,\n        username=user.username,\n        email=user.email,\n        password=hash_password(user.password),\n        role=user.role\n    )\n    db.add(db_user)\n    db.commit()",
+        "peekOfCode": "def write_user(db: Session, user: UserSchema):\n    db_user = User(\n        name=user.name,\n        username=user.username,\n        email=user.email,\n        password=user.password,\n        role=user.role\n    )\n    db.add(db_user)\n    db.commit()",
         "detail": "server.app.controllers.userController",
+        "documentation": {}
+    },
+    {
+        "label": "update_user",
+        "kind": 2,
+        "importPath": "server.app.controllers.userController",
+        "description": "server.app.controllers.userController",
+        "peekOfCode": "def update_user(db: Session, user_data: UserUpdateSchema, isUser: User):\n    for key, value in user_data.dict().items():\n        if key == \"password\" and value is not None:\n            # Hash the provided password and set it to the isUser object\n            hashedPassword = hash_password(value)\n            setattr(isUser, key, hashedPassword)\n        elif value is not None:\n            # For other fields (e.g., username), set the values directly\n            setattr(isUser, key, value)\n    db.commit()",
+        "detail": "server.app.controllers.userController",
+        "documentation": {}
+    },
+    {
+        "label": "find_by_username",
+        "kind": 2,
+        "importPath": "server.app.libs.reuses",
+        "description": "server.app.libs.reuses",
+        "peekOfCode": "def find_by_username(query_db: Session, query_model: User, username: str):\n    return query_db.query(query_model).filter(\n        query_model.username == username).first()\ndef find_by_email(query_db: Session, query_model: User, query_with: UserSchema):\n    return query_db.query(query_model).filter(\n        query_model.email == query_with.email).first()\ndef find_by_uuid(query_db: Session, query_model: User, uuid: str):\n    return query_db.query(query_model).filter(\n        query_model.uuid == uuid).first()",
+        "detail": "server.app.libs.reuses",
+        "documentation": {}
+    },
+    {
+        "label": "find_by_email",
+        "kind": 2,
+        "importPath": "server.app.libs.reuses",
+        "description": "server.app.libs.reuses",
+        "peekOfCode": "def find_by_email(query_db: Session, query_model: User, query_with: UserSchema):\n    return query_db.query(query_model).filter(\n        query_model.email == query_with.email).first()\ndef find_by_uuid(query_db: Session, query_model: User, uuid: str):\n    return query_db.query(query_model).filter(\n        query_model.uuid == uuid).first()",
+        "detail": "server.app.libs.reuses",
+        "documentation": {}
+    },
+    {
+        "label": "find_by_uuid",
+        "kind": 2,
+        "importPath": "server.app.libs.reuses",
+        "description": "server.app.libs.reuses",
+        "peekOfCode": "def find_by_uuid(query_db: Session, query_model: User, uuid: str):\n    return query_db.query(query_model).filter(\n        query_model.uuid == uuid).first()",
+        "detail": "server.app.libs.reuses",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModels",
+        "kind": 6,
+        "importPath": "server.app.models.baseModel",
+        "description": "server.app.models.baseModel",
+        "peekOfCode": "class BaseModels(Base):\n    __abstract__ = True\n    id = Column(Integer, primary_key=True, index=True)\n    uuid = Column(String(36), unique=True, default=lambda: str(uuid.uuid4()))\n    created_at = Column(DateTime, default=datetime.datetime.now())\n    updated_at = Column(DateTime, default=datetime.datetime.now(),\n                        onupdate=datetime.datetime.now())",
+        "detail": "server.app.models.baseModel",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "kind": 6,
+        "importPath": "server.app.models.productModel",
+        "description": "server.app.models.productModel",
+        "peekOfCode": "class Product(BaseModels):\n    __tablename__ = \"Products\"\n    title = Column(String(255), nullable=False)\n    slug = Column(String(255), unique=True, nullable=False)\n    description = Column(Text, nullable=True)\n    price = Column(Float, nullable=False, default=0.0)",
+        "detail": "server.app.models.productModel",
         "documentation": {}
     },
     {
@@ -381,7 +828,16 @@
         "kind": 6,
         "importPath": "server.app.models.userModel",
         "description": "server.app.models.userModel",
-        "peekOfCode": "class User(Base):\n    __tablename__ = \"Users\"\n    id = Column(Integer, primary_key=True, index=True)\n    uuid = Column(String(36), unique=True, index=True,\n                  default=str(uuid.uuid4()))\n    names = Column(String(256))\n    username: Column(String(256), unique=True)\n    email = Column(String(256), unique=True)\n    password = Column(String(256))\n    role = Column(ERoles, default=ERoles.USER)",
+        "peekOfCode": "class User(BaseModels):\n    __tablename__ = \"Users\"\n    name = Column(String(256), nullable=True)\n    username = Column(String(256), unique=True)\n    email = Column(String(256), unique=True)\n    password = Column(String(256))\n    role = Column(Enum(ERoles), default=ERoles.USER)\ndef before_hash_password(mapper, connection, target):\n    target.password = hash_password(target.password)\nevent.listen(User, \"before_insert\", before_hash_password)",
+        "detail": "server.app.models.userModel",
+        "documentation": {}
+    },
+    {
+        "label": "before_hash_password",
+        "kind": 2,
+        "importPath": "server.app.models.userModel",
+        "description": "server.app.models.userModel",
+        "peekOfCode": "def before_hash_password(mapper, connection, target):\n    target.password = hash_password(target.password)\nevent.listen(User, \"before_insert\", before_hash_password)",
         "detail": "server.app.models.userModel",
         "documentation": {}
     },
@@ -390,8 +846,17 @@
         "kind": 5,
         "importPath": "server.app.routes.authRoutes",
         "description": "server.app.routes.authRoutes",
-        "peekOfCode": "router = APIRouter()\n@router.get(\"/\")\nasync def login():\n    return {\n        \"login\": True\n    }",
+        "peekOfCode": "router = APIRouter()\n@router.post(\"/login\", tags=[\"Login\"])\nasync def login(req_data: UserLoginSchema, db: Session = Depends(get_db)):\n    try:\n        return await auth_login(req_data, db)\n    except Exception as err:\n        return JSONResponse(\n            content={\n                \"message\": \"Something went wrong!\",\n                \"error\": str(err)",
         "detail": "server.app.routes.authRoutes",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "server.app.routes.productRoutes",
+        "description": "server.app.routes.productRoutes",
+        "peekOfCode": "router = APIRouter()\n@router.get(\"/\", tags=[\"Get Product\"])\nasync def get_all_product(db: Session = Depends(get_db)):\n    products = getAllProduct(db)\n    if not products:\n        return JSONResponse(\n            content={\n                \"message\": \"No Product Avaiable!\",\n            },\n            status_code=status.HTTP_404_NOT_FOUND",
+        "detail": "server.app.routes.productRoutes",
         "documentation": {}
     },
     {
@@ -404,11 +869,38 @@
         "documentation": {}
     },
     {
-        "label": "UserCreate",
+        "label": "ProductSchema",
+        "kind": 6,
+        "importPath": "server.app.schemas.productSchema",
+        "description": "server.app.schemas.productSchema",
+        "peekOfCode": "class ProductSchema(BaseModel):\n    title: str\n    slug: str\n    description: str\n    price: int",
+        "detail": "server.app.schemas.productSchema",
+        "documentation": {}
+    },
+    {
+        "label": "UserSchema",
         "kind": 6,
         "importPath": "server.app.schemas.userSchema",
         "description": "server.app.schemas.userSchema",
-        "peekOfCode": "class UserCreate(BaseModel):\n    name: str\n    username: str\n    email: str\n    password: str\n    role: str = ERoles",
+        "peekOfCode": "class UserSchema(BaseModel):\n    name: str\n    username: str\n    email: str\n    password: str\n    role: Optional[str] = ERoles.USER\nclass UserUpdateSchema(BaseModel):\n    name: Optional[str] = None\n    email: Optional[str] = None\n    username: Optional[str] = None",
+        "detail": "server.app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "UserUpdateSchema",
+        "kind": 6,
+        "importPath": "server.app.schemas.userSchema",
+        "description": "server.app.schemas.userSchema",
+        "peekOfCode": "class UserUpdateSchema(BaseModel):\n    name: Optional[str] = None\n    email: Optional[str] = None\n    username: Optional[str] = None\n    role: Optional[str] = None\n    password: Optional[str] = None\nclass UserLoginSchema(BaseModel):\n    username: Optional[str] = None\n    password: Optional[str] = None",
+        "detail": "server.app.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "UserLoginSchema",
+        "kind": 6,
+        "importPath": "server.app.schemas.userSchema",
+        "description": "server.app.schemas.userSchema",
+        "peekOfCode": "class UserLoginSchema(BaseModel):\n    username: Optional[str] = None\n    password: Optional[str] = None",
         "detail": "server.app.schemas.userSchema",
         "documentation": {}
     },
@@ -417,7 +909,7 @@
         "kind": 2,
         "importPath": "server.app.services.services",
         "description": "server.app.services.services",
-        "peekOfCode": "def hash_password(password: str) -> str:\n    return password_context.hash(password)\ndef verify_password(plainPassword: str, hashedPassword: str) -> bool:\n    return password_context.verify(plainPassword, hashedPassword)",
+        "peekOfCode": "def hash_password(password: str) -> str:\n    return password_context.hash(password)\ndef verify_password(plainPassword: str, hashedPassword: str) -> bool:\n    isMatch = password_context.verify(plainPassword, hashedPassword)\n    if isMatch:\n        return True\n    else:\n        return False",
         "detail": "server.app.services.services",
         "documentation": {}
     },
@@ -426,7 +918,7 @@
         "kind": 2,
         "importPath": "server.app.services.services",
         "description": "server.app.services.services",
-        "peekOfCode": "def verify_password(plainPassword: str, hashedPassword: str) -> bool:\n    return password_context.verify(plainPassword, hashedPassword)",
+        "peekOfCode": "def verify_password(plainPassword: str, hashedPassword: str) -> bool:\n    isMatch = password_context.verify(plainPassword, hashedPassword)\n    if isMatch:\n        return True\n    else:\n        return False",
         "detail": "server.app.services.services",
         "documentation": {}
     },
@@ -435,8 +927,17 @@
         "kind": 5,
         "importPath": "server.app.services.services",
         "description": "server.app.services.services",
-        "peekOfCode": "password_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef hash_password(password: str) -> str:\n    return password_context.hash(password)\ndef verify_password(plainPassword: str, hashedPassword: str) -> bool:\n    return password_context.verify(plainPassword, hashedPassword)",
+        "peekOfCode": "password_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef hash_password(password: str) -> str:\n    return password_context.hash(password)\ndef verify_password(plainPassword: str, hashedPassword: str) -> bool:\n    isMatch = password_context.verify(plainPassword, hashedPassword)\n    if isMatch:\n        return True\n    else:\n        return False",
         "detail": "server.app.services.services",
+        "documentation": {}
+    },
+    {
+        "label": "ERoles",
+        "kind": 6,
+        "importPath": "server.app.utils.common",
+        "description": "server.app.utils.common",
+        "peekOfCode": "class ERoles(PyEnum):\n    USER = \"USER\"\n    ADMIN = \"ADMIN\"\n    VENDOR = \"VENDOR\"",
+        "detail": "server.app.utils.common",
         "documentation": {}
     },
     {
@@ -449,20 +950,11 @@
         "documentation": {}
     },
     {
-        "label": "ERoles",
-        "kind": 6,
-        "importPath": "server.app.utils.utils",
-        "description": "server.app.utils.utils",
-        "peekOfCode": "class ERoles(Enum):\n    USER = \"USER\"\n    ADMIN = \"ADMIN\"\n    VENDOR = \"VENDOR\"",
-        "detail": "server.app.utils.utils",
-        "documentation": {}
-    },
-    {
         "label": "app",
         "kind": 5,
         "importPath": "server.main",
         "description": "server.main",
-        "peekOfCode": "app = FastAPI()\napp.include_router(userRoutes.router, prefix=\"/api/v1/users\")\n@app.get(\"/\", tags=[\"Checker\"])\nasync def checker():\n    return JSONResponse(\n        content={\n            \"Working\": True,\n            \"Hello\": \"World\"\n        }\n    )",
+        "peekOfCode": "app = FastAPI()\napp.include_router(authRoutes.router, prefix=\"/api/v1/auth\")\napp.include_router(userRoutes.router, prefix=\"/api/v1/users\")\napp.include_router(productRoutes.router, prefix=\"/api/v1/products\")\n@app.get(\"/\", tags=[\"Checker\"])\nasync def checker():\n    return JSONResponse(\n        content={\n            \"Working\": True,\n            \"Hello\": \"World\"",
         "detail": "server.main",
         "documentation": {}
     }

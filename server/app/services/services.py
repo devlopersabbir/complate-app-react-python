@@ -8,4 +8,8 @@ def hash_password(password: str) -> str:
 
 
 def verify_password(plainPassword: str, hashedPassword: str) -> bool:
-    return password_context.verify(plainPassword, hashedPassword)
+    isMatch = password_context.verify(plainPassword, hashedPassword)
+    if isMatch:
+        return True
+    else:
+        return False

@@ -441,6 +441,38 @@
         "documentation": {}
     },
     {
+        "label": "OAuth2PasswordBearer",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
+        "isExtraImport": true,
+        "detail": "fastapi.security",
+        "documentation": {}
+    },
+    {
+        "label": "verify_password",
+        "importPath": "app.services.services",
+        "description": "app.services.services",
+        "isExtraImport": true,
+        "detail": "app.services.services",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "importPath": "app.services.services",
+        "description": "app.services.services",
+        "isExtraImport": true,
+        "detail": "app.services.services",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "importPath": "app.services.services",
+        "description": "app.services.services",
+        "isExtraImport": true,
+        "detail": "app.services.services",
+        "documentation": {}
+    },
+    {
         "label": "Product",
         "importPath": "app.models.productModel",
         "description": "app.models.productModel",
@@ -454,22 +486,6 @@
         "description": "app.models.productModel",
         "isExtraImport": true,
         "detail": "app.models.productModel",
-        "documentation": {}
-    },
-    {
-        "label": "hash_password",
-        "importPath": "app.services.services",
-        "description": "app.services.services",
-        "isExtraImport": true,
-        "detail": "app.services.services",
-        "documentation": {}
-    },
-    {
-        "label": "hash_password",
-        "importPath": "app.services.services",
-        "description": "app.services.services",
-        "isExtraImport": true,
-        "detail": "app.services.services",
         "documentation": {}
     },
     {
@@ -767,7 +783,7 @@
         "kind": 2,
         "importPath": "app.libs.reuses",
         "description": "app.libs.reuses",
-        "peekOfCode": "def find_by_username(query_db: Session, query_model: User, query_with: UserSchema or UserLoginSchema) -> bool:\n    return query_db.query(query_model).filter(\n        query_model.username == query_with.username).first()\ndef find_by_email(query_db: Session, query_model: User, query_with: UserSchema) -> bool:\n    return query_db.query(query_model).filter(\n        query_model.email == query_with.email).first()\ndef find_by_uuid(query_db: Session, query_model: User, uuid: str) -> bool:\n    return query_db.query(query_model).filter(\n        query_model.uuid == uuid).first()",
+        "peekOfCode": "def find_by_username(query_db: Session, query_model: User, username: str):\n    return query_db.query(query_model).filter(\n        query_model.username == username).first()\ndef find_by_email(query_db: Session, query_model: User, query_with: UserSchema):\n    return query_db.query(query_model).filter(\n        query_model.email == query_with.email).first()\ndef find_by_uuid(query_db: Session, query_model: User, uuid: str):\n    return query_db.query(query_model).filter(\n        query_model.uuid == uuid).first()",
         "detail": "app.libs.reuses",
         "documentation": {}
     },
@@ -776,7 +792,7 @@
         "kind": 2,
         "importPath": "app.libs.reuses",
         "description": "app.libs.reuses",
-        "peekOfCode": "def find_by_email(query_db: Session, query_model: User, query_with: UserSchema) -> bool:\n    return query_db.query(query_model).filter(\n        query_model.email == query_with.email).first()\ndef find_by_uuid(query_db: Session, query_model: User, uuid: str) -> bool:\n    return query_db.query(query_model).filter(\n        query_model.uuid == uuid).first()",
+        "peekOfCode": "def find_by_email(query_db: Session, query_model: User, query_with: UserSchema):\n    return query_db.query(query_model).filter(\n        query_model.email == query_with.email).first()\ndef find_by_uuid(query_db: Session, query_model: User, uuid: str):\n    return query_db.query(query_model).filter(\n        query_model.uuid == uuid).first()",
         "detail": "app.libs.reuses",
         "documentation": {}
     },
@@ -785,7 +801,7 @@
         "kind": 2,
         "importPath": "app.libs.reuses",
         "description": "app.libs.reuses",
-        "peekOfCode": "def find_by_uuid(query_db: Session, query_model: User, uuid: str) -> bool:\n    return query_db.query(query_model).filter(\n        query_model.uuid == uuid).first()",
+        "peekOfCode": "def find_by_uuid(query_db: Session, query_model: User, uuid: str):\n    return query_db.query(query_model).filter(\n        query_model.uuid == uuid).first()",
         "detail": "app.libs.reuses",
         "documentation": {}
     },
@@ -866,7 +882,7 @@
         "kind": 6,
         "importPath": "app.schemas.userSchema",
         "description": "app.schemas.userSchema",
-        "peekOfCode": "class UserSchema(BaseModel):\n    name: str\n    username: str\n    email: str\n    password: str\n    role: str = ERoles\nclass UserUpdateSchema(BaseModel):\n    name: Optional[str] = None\n    email: Optional[str] = None\n    username: Optional[str] = None",
+        "peekOfCode": "class UserSchema(BaseModel):\n    name: str\n    username: str\n    email: str\n    password: str\n    role: Optional[str] = ERoles.USER\nclass UserUpdateSchema(BaseModel):\n    name: Optional[str] = None\n    email: Optional[str] = None\n    username: Optional[str] = None",
         "detail": "app.schemas.userSchema",
         "documentation": {}
     },
@@ -875,7 +891,7 @@
         "kind": 6,
         "importPath": "app.schemas.userSchema",
         "description": "app.schemas.userSchema",
-        "peekOfCode": "class UserUpdateSchema(BaseModel):\n    name: Optional[str] = None\n    email: Optional[str] = None\n    username: Optional[str] = None\n    role: Optional[str] = None\n    password: Optional[str] = None\nclass UserLoginSchema(BaseModel):\n    username: str\n    password: str",
+        "peekOfCode": "class UserUpdateSchema(BaseModel):\n    name: Optional[str] = None\n    email: Optional[str] = None\n    username: Optional[str] = None\n    role: Optional[str] = None\n    password: Optional[str] = None\nclass UserLoginSchema(BaseModel):\n    username: Optional[str] = None\n    password: Optional[str] = None",
         "detail": "app.schemas.userSchema",
         "documentation": {}
     },
@@ -884,7 +900,7 @@
         "kind": 6,
         "importPath": "app.schemas.userSchema",
         "description": "app.schemas.userSchema",
-        "peekOfCode": "class UserLoginSchema(BaseModel):\n    username: str\n    password: str",
+        "peekOfCode": "class UserLoginSchema(BaseModel):\n    username: Optional[str] = None\n    password: Optional[str] = None",
         "detail": "app.schemas.userSchema",
         "documentation": {}
     },
@@ -893,7 +909,7 @@
         "kind": 2,
         "importPath": "app.services.services",
         "description": "app.services.services",
-        "peekOfCode": "def hash_password(password: str) -> str:\n    return password_context.hash(password)\ndef verify_password(plainPassword: str, hashedPassword: str) -> bool:\n    return password_context.verify(plainPassword, hashedPassword)",
+        "peekOfCode": "def hash_password(password: str) -> str:\n    return password_context.hash(password)\ndef verify_password(plainPassword: str, hashedPassword: str) -> bool:\n    isMatch = password_context.verify(plainPassword, hashedPassword)\n    if isMatch:\n        return True\n    else:\n        return False",
         "detail": "app.services.services",
         "documentation": {}
     },
@@ -902,7 +918,7 @@
         "kind": 2,
         "importPath": "app.services.services",
         "description": "app.services.services",
-        "peekOfCode": "def verify_password(plainPassword: str, hashedPassword: str) -> bool:\n    return password_context.verify(plainPassword, hashedPassword)",
+        "peekOfCode": "def verify_password(plainPassword: str, hashedPassword: str) -> bool:\n    isMatch = password_context.verify(plainPassword, hashedPassword)\n    if isMatch:\n        return True\n    else:\n        return False",
         "detail": "app.services.services",
         "documentation": {}
     },
@@ -911,7 +927,7 @@
         "kind": 5,
         "importPath": "app.services.services",
         "description": "app.services.services",
-        "peekOfCode": "password_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef hash_password(password: str) -> str:\n    return password_context.hash(password)\ndef verify_password(plainPassword: str, hashedPassword: str) -> bool:\n    return password_context.verify(plainPassword, hashedPassword)",
+        "peekOfCode": "password_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef hash_password(password: str) -> str:\n    return password_context.hash(password)\ndef verify_password(plainPassword: str, hashedPassword: str) -> bool:\n    isMatch = password_context.verify(plainPassword, hashedPassword)\n    if isMatch:\n        return True\n    else:\n        return False",
         "detail": "app.services.services",
         "documentation": {}
     },

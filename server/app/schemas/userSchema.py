@@ -8,7 +8,7 @@ class UserSchema(BaseModel):
     username: str
     email: str
     password: str
-    role: str = ERoles
+    role: Optional[str] = ERoles.USER
 
 
 class UserUpdateSchema(BaseModel):
@@ -20,5 +20,5 @@ class UserUpdateSchema(BaseModel):
 
 
 class UserLoginSchema(BaseModel):
-    username: str
-    password: str
+    username: Optional[str] = None
+    password: Optional[str] = None

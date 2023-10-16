@@ -743,6 +743,15 @@
         "documentation": {}
     },
     {
+        "label": "oauth2_scheme",
+        "kind": 5,
+        "importPath": "app.controllers.authController",
+        "description": "app.controllers.authController",
+        "peekOfCode": "oauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"token\")\nasync def auth_login(req_data: UserLoginSchema, db: Session):\n    if not req_data.username or not req_data.password:\n        return JSONResponse(\n            content={\n                \"message\": \"Please fill required field!\"\n            },\n            status_code=status.HTTP_400_BAD_REQUEST\n        )\n    # check our user have on db or not using username",
+        "detail": "app.controllers.authController",
+        "documentation": {}
+    },
+    {
         "label": "getAllProduct",
         "kind": 2,
         "importPath": "app.controllers.productController",
